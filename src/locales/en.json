@@ -39,22 +39,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Master core clicker mechanics, ball bouncing basics, and early brick-clearing strategies."
         },
         {
           "number": "2",
           "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "description": "Optimize gold spending, increase ball speed and power, and advance through hundreds of stages efficiently."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Ball Upgrades & Synergies",
+          "description": "Unlock specialized balls like Plasma, Sniper, and Scatter to melt dense brick clusters and high-HP targets."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Idle Breakout."
+          "title": "Prestige & Black Bricks",
+          "description": "Perform well-timed resets to bank gold multipliers and harvest Black Bricks for permanent skill tree power."
         }
       ]
     },
@@ -62,237 +62,303 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Ball Tier List",
+        "Beginner Guide",
+        "Prestige Math",
+        "Import Codes"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Everything you need from your first brick tap to building an automated ball fleet.",
+          "href": "/guide/idle-breakout-beginner-guide"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "title": "Active Import Codes",
+          "description": "All working save codes for infinite money, ball unlocks, and stage skips.",
+          "href": "/codes/idle-breakout-codes"
         },
         {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "badge": "Tier List",
+          "title": "Ball Tier List",
+          "description": "Complete damage rankings and late-game viability for all 6 ball classes.",
+          "href": "/items/idle-breakout-ball-tier-list"
         },
         {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "badge": "Progression",
+          "title": "Prestige Strategy",
+          "description": "Optimal reset timing, gold multiplier formulas, and endgame push tactics.",
+          "href": "/progression/idle-breakout-prestige"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "badge": "Skills",
+          "title": "Skills & Boss Battles",
+          "description": "Master the 24-node skill tree, Black Brick farming, and boss summon requirements.",
+          "href": "/items/idle-breakout-skills"
         },
         {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "badge": "Mechanics",
+          "title": "Power Ups Guide",
+          "description": "How to stack menu charges and roulette floating spawns for explosive damage.",
+          "href": "/mechanics/idle-breakout-power-ups"
         },
         {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "badge": "Milestones",
+          "title": "Achievements Guide",
+          "description": "Unlock all milestone awards, laser automation perks, and prize upgrades.",
+          "href": "/mechanics/idle-breakout-achievements"
         },
         {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "badge": "Setup",
+          "title": "Best Ball Loadouts",
+          "description": "Optimized ball combinations to push deep into level 3,000+ without stalling.",
+          "href": "/items/idle-breakout-best-loadout"
         },
         {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Download",
+          "title": "PC Download Guide",
+          "description": "How to run Idle Breakout smoothly offline on PC with zero browser lag.",
+          "href": "/controls/idle-breakout-download"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Idle Breakout?",
       "paragraphs": [
-        "Idle Breakout is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Idle Breakout is an addictive incremental arcade game created by Kodiqi that reimagines classic Atari brick breaking. Instead of manually defending a moving paddle, players purchase autonomous balls that bounce relentlessly inside an enclosed chamber, chipping away at numbered blocks to generate gold and unlock powerful scaling upgrades.",
+        "As brick health pools scale from simple numbers into millions and billions, success requires deep strategic synergy. Master six distinct ball types, activate game-changing power-up bursts, summon and conquer challenging bosses, and leverage prestige resets to acquire permanent multipliers and conquer infinite levels."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
-        },
-        {
-          "label": "Platform",
-          "value": "Roblox"
+          "value": "Kodiqi"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Idle Incremental"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Total Visits",
+          "value": "750K+"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Unique Balls",
+          "value": "6 Types"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Skill Nodes",
+          "value": "24"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Platforms",
+          "value": "Browser & PC"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Idle Breakout Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Master Idle Breakout with comprehensive ball tier lists, active import codes, prestige guides, skill tree paths, and brick-breaking strategies.",
       "modules": [
         {
           "order": 1,
-          "name": "Idle Breakout Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/idle-breakout-codes",
-          "displayType": "code-box",
+          "name": "Idle Breakout Balls Guide",
+          "description": "This module explains all ball types, their abilities, upgrade priorities, and how each ball affects progression speed. Players searching for specific balls or the best upgrade path can quickly find useful information here.",
+          "href": "/items/idle-breakout-ball-tier-list",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "S",
+              "detail": "Sniper Ball & Cannon Ball — Essential high-HP elimination and kinetic burst damage."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "A",
+              "detail": "Scatter Ball — Screen flooding multi-target fragments for rapid hit-count scaling."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "B",
+              "detail": "Poison Ball & Plasma Ball — Area splash clear and indefinite DoT health softening."
+            },
+            {
+              "label": "C",
+              "detail": "Basic Ball — Reliable low-cost starter projectile that falls off in high stages."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
+          "name": "Idle Breakout Beginner Guide",
+          "description": "A beginner-focused guide covering the basic gameplay loop, first upgrades, money management, and early progression strategies. It helps new players understand how to start efficiently.",
           "href": "/guide/idle-breakout-beginner-guide",
-          "displayType": "feature-cards",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "1",
+              "detail": "Click starting bricks manually to accumulate early gold and buy initial Basic Balls."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "2",
+              "detail": "Prioritize ball speed and power upgrades to clear early boards without stalled runs."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "3",
+              "detail": "Unlock Plasma and Sniper balls to handle dense clusters and high-value target bricks."
+            },
+            {
+              "label": "4",
+              "detail": "Save gold for your first prestige reset around level 200 to unlock permanent multipliers."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/idle-breakout-tier-list",
-          "displayType": "tier-grid",
+          "name": "Idle Breakout Upgrades Guide",
+          "description": "This section covers upgrade systems, ball improvements, power progression, and important upgrade decisions. It targets searches from players looking for ways to increase damage and clear bricks faster.",
+          "href": "/items/idle-breakout-skills",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Ball Speed",
+              "detail": "Increases bounce frequency and hit tempo across all active balls."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Ball Power",
+              "detail": "Multiplies direct collision damage to crack high-health bricks faster."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Max Balls",
+              "detail": "Expands active projectile capacity for overwhelming screen saturation."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Laser Tech",
+              "detail": "Automated perimeter beams that provide constant passive DPS to all blocks."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/idle-breakout-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Idle Breakout Prestige Guide",
+          "description": "A guide explaining the prestige system, when to reset progress, and how permanent bonuses improve future runs. This helps advanced players optimize long-term progression.",
+          "href": "/progression/idle-breakout-prestige",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "1",
+              "detail": "Identify progression slowdown when levels take longer than 30 seconds to complete."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "2",
+              "detail": "Trigger prestige in the main menu to bank golden meta-currency from your run."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "3",
+              "detail": "Invest gold into Ball Power Multipliers and global Speed boosts for immediate acceleration."
+            },
+            {
+              "label": "4",
+              "detail": "Push past level 1,000 on subsequent runs with compounded multiplicative scaling."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/idle-breakout-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Idle Breakout Power Ups Guide",
+          "description": "This module introduces available power-ups and active mechanics that can speed up brick breaking. It provides players with information about temporary boosts and progression advantages.",
+          "href": "/mechanics/idle-breakout-power-ups",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Surge",
+              "detail": "Drastically multiplies projectile damage output to blast tough blocks."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Speed Rush",
+              "detail": "Doubles ball movement speed for rapid multi-hit screen sweeps."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Gold Rush",
+              "detail": "Multiplies gold drops from every shattered brick during active duration."
+            },
+            {
+              "label": "Roulette",
+              "detail": "Catch floating screen icons for infinite on-demand buff activations."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/idle-breakout-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Idle Breakout Achievements Guide",
+          "description": "A searchable achievement section listing milestones and goals players can complete during progression. It helps users track completion targets and discover additional objectives.",
+          "href": "/mechanics/idle-breakout-achievements",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Basic Master",
+              "detail": "Deal 1,000,000 lifetime damage using Basic Balls in early runs."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Void Breaker",
+              "detail": "Break 1,000 Black Bricks to fuel late-game skill tree investments."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Deep Dive",
+              "detail": "Push your automated brick-breaker fleet past milestone Level 250."
+            },
+            {
+              "label": "Decimator",
+              "detail": "Shatter 1,000,000 total bricks across all sessions for top prizes."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Idle Breakout Codes Guide",
+          "description": "This module covers whether Idle Breakout has active codes, save codes, or reward systems related to player progression. If no official codes exist, it can provide code-related search clarification.",
+          "href": "/codes/idle-breakout-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Infinite Cash",
+              "detail": "Serialized save string granting endless gold and instant maximum upgrades."
+            },
+            {
+              "label": "Skip Lvl 42k",
+              "detail": "Fast-forward directly into endgame stage 42,000 with maxed ball rosters."
+            },
+            {
+              "label": "Max Ball Tier",
+              "detail": "Unlocks all specialized ball types fully leveled for ultimate testing."
+            },
+            {
+              "label": "Autoplay Mode",
+              "detail": "Enables automated screen clearing setups without manual grinding."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Idle Breakout Gameplay FAQ",
+          "description": "A compact gameplay help section answering common questions about controls, platforms, saving progress, and core mechanics. It captures long-tail searches from new and returning players.",
+          "href": "/guide/idle-breakout-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Saves",
+              "detail": "Export and import your game data strings directly from the settings menu."
+            },
+            {
+              "label": "Controls",
+              "detail": "Click bricks to chip health or let automated balls bounce autonomously."
+            },
+            {
+              "label": "BB Coins",
+              "detail": "Rare durable dark blocks that yield meta-currency for boss battles."
+            },
+            {
+              "label": "Platforms",
+              "detail": "Playable in modern web browsers and downloadable as a lightweight PC app."
             }
           ]
         }
@@ -303,24 +369,24 @@
       "description": "Quick answers to the most common questions about Idle Breakout.",
       "items": [
         {
-          "question": "What is Idle Breakout?",
-          "answer": "Idle Breakout is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What is Idle Breakout and how do you play it?",
+          "answer": "Idle Breakout is an incremental arcade game by Kodiqi where you buy and upgrade bouncing balls to break numbered bricks. As blocks break, you earn gold to unlock faster, stronger balls, prestige multipliers, and skill trees."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "What is the best ball in Idle Breakout?",
+          "answer": "For early progression, the Plasma Ball provides excellent AoE clear. In the late game (Level 1,000+), the Sniper Ball and Cannon Ball dominate the meta with massive single-target and burst damage against high-HP bricks."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How does prestige work in Idle Breakout?",
+          "answer": "Prestige resets your current stage and regular balls in exchange for Gold, a permanent meta-currency. Spending Gold on global power and speed multipliers allows you to blast past previous high levels in a fraction of the time."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "What are Black Bricks used for in Idle Breakout?",
+          "answer": "Black Bricks (BB) are rare, high-durability blocks that spawn during regular levels. Shattering them grants Black Bricks currency, which is spent in the Skills tab to summon Bosses and earn Skill Points for permanent passives."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Are there working save import codes for Idle Breakout?",
+          "answer": "Yes, Idle Breakout supports serialized save codes that can be imported in the settings menu. These codes let you test endgame builds, unlock infinite cash, or jump straight to high levels like 10,000 or 42,000."
         }
       ]
     },
@@ -337,7 +403,7 @@
     "activeCodes": "Active Codes",
     "updated": "Updated",
     "viewAllCodes": "View all codes",
-    "playOnRoblox": "Play on Roblox",
+    "playOnRoblox": "Play Idle Breakout",
     "inThisSection": "In this section",
     "tableOfContents": "Table of Contents",
     "nextSteps": "Next Steps",
