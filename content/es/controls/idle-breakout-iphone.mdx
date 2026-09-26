@@ -1,0 +1,134 @@
+export const metadata = {
+  title: "Guía de Idle Breakout para iPhone: Controles táctiles, configuración y estrategia",
+  description: "Aprende a jugar a Idle Breakout en iPhone. Domina los controles táctiles móviles, optimiza el rendimiento en Safari, gestiona partidas guardadas y acelera el prestigio.",
+  category: "controls",
+  date: "2026-09-24",
+};
+
+Si te encantan los clásicos rompeladrillos arcade combinados con mecánicas incrementales profundas, poner en marcha el juego de **idle breakout iphone** transformará tus sesiones móviles casuales en una adictiva escalada de números. Destruir bloques numerados con proyectiles que rebotan automáticamente se siente completamente natural en un smartphone; sin embargo, muchos jugadores se topan con pequeños inconvenientes de configuración al pasar de monitores de escritorio a pantallas táctiles. Dominar los controles de **idle breakout iphone** te permite tocar la pantalla con eficiencia, activar potenciadores sin retraso en la interfaz y farmear millones de ladrillos, ya sea que tengas dos minutos o dos horas libres.
+
+Dado que el desarrollador Kodiqi creó originalmente el título en GameMaker para entornos web y de escritorio, los usuarios de móviles deben comprender cómo la emulación del navegador, el escalado de pantalla y las limitaciones del sistema operativo móvil afectan su partida. Esta guía detalla todo lo que necesitas saber para configurar el juego en iOS, ajustar tus pulsaciones táctiles, priorizar las mejoras de las bolas y proteger tu progreso.
+
+## Cómo configurar Idle Breakout en iOS mediante Safari
+
+Actualmente no existe una versión nativa independiente en la App Store de Apple, pero puedes jugar a la versión completa en HTML5 directamente en iOS. Gracias a la funcionalidad de Aplicación Web Progresiva (PWA) de Safari, puedes ejecutar el título sin que las barras de direcciones del navegador obstaculicen tu cuadrícula de ladrillos.
+
+Para iniciar la versión web, visita la [página oficial del proyecto en itch.io de Kodiqi](https://kodiqi.itch.io/idle-breakout) desde Safari móvil. Una vez cargado el lienzo (canvas), puedes convertir la pestaña del navegador en un icono exclusivo en la pantalla de inicio que se comporta de manera prácticamente idéntica a una app nativa.
+
+### Instalación paso a paso en la pantalla de inicio de iOS
+
+1. Abre **Safari** en tu iPhone y navega hasta la versión web de Idle Breakout.
+2. Toca el botón **Compartir** (el icono cuadrado con una flecha hacia arriba) en la parte inferior de la pantalla.
+3. Desplázate hacia abajo en el menú y selecciona **Agregar a inicio**.
+4. Cambia el nombre del acceso directo a "Idle Breakout" y toca **Agregar** en la esquina superior derecha.
+5. Toca el nuevo icono en tu pantalla de inicio para iniciar el juego en modo pantalla completa independiente.
+
+| Modo de plataforma | Espacio en pantalla | Barra de direcciones visible | Riesgo de zoom accidental | Impacto en la batería |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pestaña estándar de Safari** | Reducido | Sí (arriba/abajo) | Moderado | Bajo |
+| **PWA en pantalla de inicio** | Máximo (Pantalla completa) | No | Bajo | Bajo–Moderado |
+| **Navegadores móviles de terceros** | Variable | Sí | Alto | Moderado |
+| **Navegador de escritorio (Referencia)** | Fijo 16:9 | No (Ventana) | Ninguno | Insignificante |
+
+Configurar una sesión de **idle breakout iphone** a través de la función de Pantalla de inicio elimina la barra de navegación inferior, evitando que abras por accidente marcadores o pestañas mientras tocas los ladrillos de las filas inferiores.
+
+## Controles táctiles móviles vs. mecánicas de clicker en escritorio
+
+La transición del cursor del ratón en escritorio a la entrada táctil capacitiva cambia radicalmente la forma de jugar. En PC, los jugadores dependen de clics rápidos con el ratón o autoclickers para romper manualmente los ladrillos negros de alta durabilidad. En un iPhone, tu pantalla admite toques multitáctiles, pero las pulsaciones rápidas pueden desencadenar ocasionalmente gestos de navegación o accesibilidad no deseados de iOS.
+
+### Gestión de pulsaciones táctiles y gestos accidentales
+
+Al optimizar tu experiencia táctil en **idle breakout iphone**, debes evitar que Safari registre los dobles toques rápidos como una orden de zoom. Tocar dos veces el lienzo en pestañas estándar del navegador puede hacer que la vista se amplíe, cortando los menús de mejoras a la derecha o el selector de bolas en la parte inferior.
+
+Ejecutar el juego mediante el acceso directo "Agregar a inicio" desactiva automáticamente el zoom por doble toque estándar en la mayoría de versiones de iOS. Si prefieres jugar en una pestaña normal del navegador, mantén un pulgar apoyado en una zona vacía de la barra lateral para estabilizar la escala de la pantalla mientras tocas los ladrillos con el dedo índice.
+
+| Acción de control | Entrada en escritorio | Gesto táctil en iPhone | Consideraciones móviles |
+| :--- | :--- | :--- | :--- |
+| **Daño manual a ladrillos** | Clic izquierdo del ratón | Toque con un solo dedo | Puede activar el zoom de iOS si se toca demasiado rápido en pestañas normales |
+| **Daño manual en ráfaga** | Autoclicker / Jitter click | Toques alternados con varios dedos | Usa 2–3 dedos alternando suavemente sobre grupos densos |
+| **Comprar bolas** | Clic en el botón de compra | Tocar el icono de la bola | Áreas de toque pequeñas; amplía ligeramente si no aciertas al botón |
+| **Mejorar estadísticas de bolas** | Clic en Velocidad / Potencia | Toque directo en el botón | Mantén la pulsación brevemente para evitar fotogramas de entrada perdidos |
+| **Activar potenciadores** | Clic en icono de habilidad | Tocar la barra de potenciadores | Confirma que el icono de estado se ilumine antes de volver a tocar ladrillos |
+| **Acceder a Ajustes/Guardado** | Clic en icono de engranaje | Tocar la esquina superior derecha | Objetivo de interfaz pequeño; asegúrate de que el toque se registre con claridad |
+
+Las experiencias compartidas por jugadores en foros comunitarios destacan que alternar entre dos dedos índices genera el mayor DPS (daño por segundo) manual sin fatigar las manos ni saturar el búfer de gestos de iOS.
+
+## Tipos de bolas, mejoras y eficiencia táctil
+
+Cada tipo de bola en Idle Breakout cumple un rol específico en tu motor de destrucción. En pantallas móviles, la claridad visual es fundamental. A medida que el número de bolas aumenta a decenas, el renderizado de proyectiles puede sobrecargar los procesadores móviles, provocando caídas de fotogramas. Elegir las bolas correctas mantiene tu progreso rápido y cuida la batería de tu dispositivo.
+
+### Desglose del repertorio de bolas
+
+- **Bola básica (Basic Ball):** Daño cinético constante y económico. Esencial en los primeros niveles, pero rápidamente relegada a generar ingresos pasivos una vez que se desbloquean bolas especializadas.
+- **Bola de plasma (Plasma Ball):** Inflige daño explosivo de área de efecto (AoE) por salpicadura a las piezas cercanas. Muy eficaz para limpiar cuadrículas compactas.
+- **Bola francotiradora (Sniper Ball):** Apunta a los bloques con mucha salud aplicando una gran fuerza cinética en un solo impacto. Excelente para eliminar los ladrillos negros blindados que frenan la limpieza pasiva.
+- **Bola de dispersión (Scatter Ball):** Se divide en miniproyectiles secundarios al impactar. Genera una presión inmensa en el tablero, aunque la saturación visual en pantalla puede reducir los fotogramas en modelos de iPhone antiguos.
+- **Bola de cañón (Cannon Ball):** Proporciona un golpe contundente a objetivos individuales, destrozando objetivos acorazados con un alto daño base.
+- **Bola de veneno (Poison Ball):** Aplica efectos negativos de daño en el tiempo (DoT) a los ladrillos. Según reportes de la comunidad, el veneno desgasta las formaciones densas para que los proyectiles de salpicadura las rematen de golpe.
+
+| Tipo de bola | Especialidad principal | Sinergia táctil | Impacto en el lag en iPhone | Prioridad de mejora recomendada |
+| :--- | :--- | :--- | :--- | :--- |
+| **Básica** | DPS inicial / Economía | Baja | Insignificante | Solo juego temprano (Niveles 1–50) |
+| **Plasma** | Daño AoE de salpicadura | Alta (Debilita objetivos para toques) | Bajo–Moderado | Alta (Limpieza principal de oleadas) |
+| **Francotiradora** | Ejecución de objetivos con alto HP | Media | Bajo | Alta (Destructora de jefes y blindaje) |
+| **Dispersión** | Alto volumen de impactos de partículas | Baja (Completamente automatizada) | Alto (Posibles caídas de fotogramas) | Moderada (Limitar cantidad si hay lag) |
+| **Cañón** | Fuerte impacto cinético | Media | Bajo | Moderada |
+| **Veneno** | Desgaste porcentual / Daño en el tiempo (DoT) | Muy alta | Bajo | Alta (Crucial para partidas avanzadas) |
+
+Ejecutar **idle breakout iphone** de forma eficiente en tu dispositivo requiere mantener un renderizado visual fluido. Si notas que el iPhone se calienta o las animaciones dan tirones en niveles avanzados, ve al menú de ajustes del juego. Desactivar los efectos láser y reducir la calidad de las partículas visuales estabiliza notablemente los fotogramas en Safari móvil.
+
+## Hitos de progresión y estrategia de prestigio
+
+El progreso en Idle Breakout gira en torno a los reinicios de prestigio. Al reiniciar por prestigio, se restablecen tus bolas activas y el nivel del tablero a cambio de monedas doradas, que desbloquean multiplicadores permanentes y puntos de habilidad. Gestionar este ciclo con soltura en dispositivos móviles evita estancamientos prolongados.
+
+### El ciclo de prestigio
+
+En las primeras partidas, los jugadores suelen cometer el error de esperar demasiado para ejecutar su primer prestigio. La progresión de los niveles escala exponencialmente en cuanto a la durabilidad de los ladrillos. Si tus bolas tardan más de 15–20 segundos en despejar una sola pantalla estándar, tus ganancias por minuto se frenarán en seco.
+
+Según la experiencia de los jugadores, una estrategia de reinicios rápidos entre los niveles 20 y 100 ofrece la acumulación más veloz de puntos de mejora iniciales. El potenciador de oro x2 debe reservarse para fases de alta densidad, maximizando las ganancias adicionales justo antes de reiniciar.
+
+| Partida de prestigio | Nivel objetivo recomendado | Objetivo principal | Enfoque de mejoras doradas | Momento del potenciador |
+| :--- | :--- | :--- | :--- | :--- |
+| **Partida 1 (Inicial)** | Nivel 20–30 | Desbloquear pestaña de prestigio | Clic base y velocidad de bolas | Activar oro x2 en nivel 20 |
+| **Partidas 2–5** | Nivel 50–100 | Establecer base de plasma | Daño por salpicadura y aumento de valor | Activar aumento de velocidad en cuadrículas densas |
+| **Partidas 6–15** | Nivel 200+ | Desbloquear bolas especializadas | Multiplicadores de bolas doradas | Combinar oro x2 + velocidad máxima |
+| **Fase final (Endgame)** | Nivel 1.000+ | Derrotar jefes y árbol de habilidades | Escalado infinito de estadísticas | Guardar recargas para muros de jefes |
+
+Acelerar los ciclos de prestigio durante una partida de **idle breakout iphone** mantiene tus sesiones activas breves y productivas. Cuando te tomes un descanso, recuerda que los navegadores móviles gestionan las pestañas en segundo plano de manera estricta. Si cambias a otra app, iOS puede suspender la ejecución de JavaScript del juego, pausando el movimiento de las bolas hasta que vuelvas a enfocar la pestaña.
+
+## Gestión de guardado y transferencia de datos en iPhone
+
+Un gran obstáculo al jugar títulos basados en navegador en iOS es el ciclo de vida del almacenamiento de Safari. Bajo ciertas condiciones, como poco espacio en el dispositivo o inactividad prolongada, Safari en iOS puede borrar la caché de IndexedDB y LocalStorage. Sin una copia de seguridad manual, semanas de progreso rompiendo ladrillos pueden desaparecer.
+
+Proteger tu progreso en **idle breakout iphone** contra el borrado de caché de Safari requiere usar periódicamente la herramienta de exportación integrada del juego. El juego codifica todo tu estado de progreso en una cadena de texto Base64 que puedes guardar en la app Notas de iOS.
+
+### Cómo hacer una copia de seguridad y restaurar tu partida guardada
+
+1. Toca el icono de **Ajustes (Engranaje)** en la esquina superior derecha de la pantalla del juego.
+2. Toca el botón **Export** (Exportar).
+3. Toca dentro del cuadro de texto generado, selecciona **Seleccionar todo** y toca **Copiar**.
+4. Abre la app **Notas** preinstalada en tu iPhone, crea una nueva nota titulada "Copia de seguridad Idle Breakout" y pega la cadena.
+5. Si tu navegador alguna vez se reinicia o borra los datos, vuelve a los ajustes del juego, toca **Import** (Importar), pega tu cadena y confirma para restaurar todo tu perfil.
+
+| Método de copia de seguridad | Seguridad de retención | Comodidad | Transferibilidad a PC | Esfuerzo de recuperación |
+| :--- | :--- | :--- | :--- | :--- |
+| **LocalStorage de Safari** | Baja (Se borra en limpiezas de caché de iOS) | Alta (Automática) | Ninguna | Imposible si se borra |
+| **Copia de texto en Notas de iOS** | Alta (Sincronizada con iCloud) | Media (Copiar/pegar manual) | Alta (AirDrop / iCloud) | 30 segundos |
+| **Borrador de correo electrónico** | Alta | Baja | Alta | 1 minuto |
+| **Gestor de contraseñas de terceros** | Alta | Media | Alta | 30 segundos |
+
+Mantener una cadena actualizada en tu app Notas garantiza que limpiar la caché del navegador o actualizar iOS nunca borrará tus puntos de prestigio, bolas desbloqueadas ni mejoras adquiridas.
+
+## Preguntas frecuentes
+
+### ¿Puedo descargar una app de idle breakout iphone directamente desde la App Store de Apple?
+No, actualmente no existe una aplicación nativa independiente disponible en la App Store de Apple. Cualquier app que use exactamente ese nombre en la App Store suele ser un clon no oficial. Para jugar a la versión auténtica creada por el desarrollador Kodiqi, accede a la versión web oficial en HTML5 a través de Safari y añádela a tu pantalla de inicio.
+
+### ¿Cómo evito que la pantalla haga zoom al tocar rápidamente?
+El zoom accidental ocurre cuando Safari móvil interpreta los toques rápidos como una orden de zoom por doble toque. Puedes solucionar esto añadiendo el juego a tu pantalla de inicio mediante la función "Agregar a inicio", que ejecuta la aplicación en una ventana independiente con los gestos de zoom predeterminados del navegador deshabilitados. Como alternativa, mantén un dedo apoyado en el borde del menú mientras tocas los ladrillos con la otra mano.
+
+### ¿El juego calcula el progreso sin conexión cuando está cerrado en un iPhone?
+Debido a que iOS suspende los procesos del navegador cuando las pestañas pasan a segundo plano o se bloquea la pantalla, la simulación de bolas en tiempo real se detiene. Sin embargo, al volver a abrir tu pestaña de **idle breakout iphone**, el juego calcula los ingresos acumulados en función de la última marca de tiempo registrada y el DPS de las bolas activas, otorgándote el dinero acumulado al instante.
+
+### ¿Cómo puedo reducir el lag en un iPhone cuando rebotan demasiadas bolas?
+Las caídas en la tasa de fotogramas suelen deberse a un exceso de efectos de partículas de las bolas de dispersión (Scatter) y de plasma (Plasma). Para eliminar los tirones, toca el icono de engranaje para abrir los ajustes, reduce la calidad visual de las partículas y desactiva los efectos de láser. Limitar la compra de bolas de dispersión en niveles avanzados también ayuda a mantener una renderización fluida.

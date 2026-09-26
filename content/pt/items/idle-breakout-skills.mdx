@@ -1,0 +1,161 @@
+export const metadata = {
+  title: "Guia de Habilidades de Idle Breakout: Melhores Upgrades, Árvores e Builds para Chefes",
+  description: "Domine a árvore de habilidades completa de Idle Breakout com nosso guia detalhado cobrindo batalhas contra chefes, upgrades de bolas, retenção de prestígio e prioridade de builds.",
+  category: "items",
+  date: "2026-09-24",
+};
+
+Avançar por milhares de níveis neste adorado clássico arcade incremental exige muito mais do que simplesmente comprar bolas básicas e esperar o dinheiro pingar aos poucos. Para dominar o ciclo infinito de quebra de blocos, dominar suas **habilidades de idle breakout** é o passo mais vital que você pode dar. Ao investir estrategicamente seus pontos suados nas **habilidades de idle breakout** certas, você desbloqueia mecânicas revolucionárias — como manter Tijolos Pretos (Black Bricks) através do prestígio, remover escudos de laser e quadruplicar o dano em área. 
+
+Esteja você encarando seu primeiro confronto contra um chefe ou buscando otimizar runs de prestígio avançadas, navegar pela matriz de melhorias pode parecer intimidador. Abaixo está um detalhamento completo de cada nó de habilidade, custos de upgrade, ranqueamentos de prioridade e estratégias práticas de gameplay para turbinar o seu progresso.
+
+## Como Funcionam a Árvore de Habilidades e as Batalhas contra Chefes
+
+Em *Idle Breakout*, as habilidades não são compradas com ouro normal ou dinheiro comum. Em vez disso, elas residem em um menu de progressão dedicado, movido por **Tijolos Pretos (Black Bricks / BB)** e **Batalhas contra Chefes (Boss Battles)**. Compreender esse ciclo é essencial antes de gastar seus recursos às cegas.
+
+Para obter acesso a pontos de habilidade:
+1. Quebre os tijolos pretos que surgem durante os níveis padrão para coletar Tijolos Pretos (frequentemente chamados pelos jogadores veteranos de BB ou Black Bucks).
+2. Abra a aba de Habilidades (Skills) e gaste seus Tijolos Pretos acumulados para invocar e desafiar Chefes poderosos.
+3. Derrote esses chefes para ganhar Pontos de Habilidade, que são usados para desbloquear nós específicos mapeados em uma grade de coordenadas de 6 linhas.
+
+A árvore de habilidades é categorizada em linhas numeradas de `0` a `5`, com cada linha correspondendo diretamente a um dos seis tipos primários de bolas do jogo: Bola Básica (`0,x`), Bola de Plasma (`1,x`), Bola Sniper (`2,x`), Bola de Dispersão (`3,x`), Bola de Canhão (`4,x`) e Bola de Veneno (`5,x`). Cada linha contém quatro níveis progressivos (colunas de `0` a `3`). 
+
+Com exceção do traço básico da Bola Sniper (que já vem desbloqueado por padrão), cada ramificação exige que você compre os nós anteriores em sequência.
+
+### Visão Geral e Mecânicas do Sistema de Habilidades
+
+| Categoria | Detalhes da Mecânica | Valor Estratégico |
+| :--- | :--- | :--- |
+| **Moeda** | Tijolos Pretos / BB (obtidos ao quebrar blocos pretos raros) | Alto; necessário para invocar chefes e impulsionar o progresso no late-game |
+| **Aquisição de Habilidades** | Derrotar Chefes invocados no menu de Habilidades | Mecânica principal para desbloquear bônus passivos e permanentes |
+| **Estrutura da Grade** | 6 Linhas (Classes de Bola) × 4 Níveis (Graus 0 a 3) | Caminho estruturado exigindo ativação linear de nós por tipo de bola |
+| **Interação com Prestígio** | Habilidades persistem no prestígio; BBs podem ser mantidos com o nó `0,1` | Mantém o efeito bola de neve da sua conta ao longo dos resets |
+| **Total de Nós** | 24 blocos de melhoria individuais | Equilibrado entre DPS puro, qualidade de vida e economia |
+
+---
+
+## Detalhamento Completo de Todas as Habilidades de Idle Breakout
+
+Cada classe de bola possui uma identidade própria e distinta. Os nós de início de jogo garantem que suas bolas possam danificar Tijolos Pretos independentemente das condições da tela, enquanto os níveis subsequentes oferecem ativações de dano em área (AoE) para limpar salas, multiplicadores de dano escaláveis e automações mecânicas.
+
+### Árvores da Bola Básica e da Bola Sniper
+
+A linha da Bola Básica oferece indiscutivelmente os benefícios de qualidade de vida mais importantes do início do jogo, enquanto a linha da Bola Sniper turbina seus ganhos offline e aumenta os limites globais de velocidade.
+
+```
+Coordenadas da Grade:
+Linha 0 = Bola Básica (Nós 0,0 a 0,3)
+Linha 2 = Bola Sniper (Nós 2,0 a 2,3)
+```
+
+O nó `2,0` é gratuito desde o momento em que você desbloqueia o menu, tornando as Bolas Sniper uma base confiável para quebrar blocos pretos logo no começo.
+
+| ID do Nó | Classe da Bola | Nome da Habilidade & Efeito no Jogo | Custo em Pontos (Acumulado) | Pré-requisito |
+| :--- | :--- | :--- | :--- | :--- |
+| **0,0** | Bola Básica | Bolas Básicas sempre causam dano a Tijolos Pretos | 1 (1) | Nenhum |
+| **0,1** | Bola Básica | Mantém os Tijolos Pretos obtidos após o Prestígio | 2 (3) | Nó 0,0 |
+| **0,2** | Bola Básica | Pequena chance de as Bolas Básicas acertarem todos os tijolos de uma vez | 4 (7) | Nós 0,0 & 0,1 |
+| **0,3** | Bola Básica | O dano da Bola Básica se multiplica por cada Bola Básica que você possui | 8 (15) | Nós 0,0, 0,1 & 0,2 |
+| **2,0** | Bola Sniper | Bolas Sniper sempre causam dano a Tijolos Pretos | 0 (0) | Desbloqueado por padrão |
+| **2,1** | Bola Sniper | Aumenta os ganhos de dinheiro offline em 10x | 2 (2) | Nó 2,0 |
+| **2,2** | Bola Sniper | Pequena chance de as Bolas Sniper acertarem todos os tijolos de uma vez | 4 (6) | Nós 2,0 & 2,1 |
+| **2,3** | Bola Sniper | Aumenta o limite máximo de velocidade das bolas para 60 | 8 (14) | Nós 2,0, 2,1 & 2,2 |
+
+### Árvores da Bola de Plasma e da Bola de Veneno
+
+Se o seu objetivo é limpar telas lotadas instantaneamente, as linhas de Plasma e Veneno são imbatíveis. O Plasma se destaca pelo alto dano em área imediato e anulação de escudos de chefes, enquanto o Veneno aplica dano contínuo (DoT) implacável, capaz de se espalhar feito fogo em grupos densos de blocos.
+
+*   **Bola de Plasma (Linha 1):** Foco intenso em limpeza direta de área. Desbloquear o nó `1,3` remove a incômoda imunidade a laser dos tijolos de chefes, criando uma sinergia colossal com configurações de canhões focados em laser.
+*   **Bola de Veneno (Linha 5):** Faz blocos de alta vida derreterem com facilidade. Uma vez infectados, os tijolos sofrem dano contínuo ao longo do tempo, recebem dano amplificado de impactos seguintes e — no nível 5,3 — infectam blocos adjacentes.
+
+| ID do Nó | Classe da Bola | Nome da Habilidade & Efeito no Jogo | Custo em Pontos (Acumulado) | Pré-requisito |
+| :--- | :--- | :--- | :--- | :--- |
+| **1,0** | Bola de Plasma | Bolas de Plasma sempre causam dano a Tijolos Pretos | 1 (1) | Nenhum |
+| **1,1** | Bola de Plasma | O dano em área (splash) da Bola de Plasma é multiplicado por 4x | 2 (3) | Nó 1,0 |
+| **1,2** | Bola de Plasma | Pequena chance de as Bolas de Plasma acertarem todos os tijolos de uma vez | 4 (7) | Nós 1,0 & 1,1 |
+| **1,3** | Bola de Plasma | Tijolos de Chefes perdem toda a proteção contra lasers | 8 (15) | Nós 1,0, 1,1 & 1,2 |
+| **5,0** | Bola de Veneno | Bolas de Veneno sempre causam dano a Tijolos Pretos | 1 (1) | Nenhum |
+| **5,1** | Bola de Veneno | Tijolos envenenados sofrem dano contínuo ao longo do tempo (DPS) | 2 (3) | Nó 5,0 |
+| **5,2** | Bola de Veneno | Pequena chance de as Bolas de Veneno acertarem todos os tijolos de uma vez | 4 (7) | Nós 5,0 & 5,1 |
+| **5,3** | Bola de Veneno | Tijolos envenenados infectam lentamente os tijolos adjacentes | 8 (15) | Nós 5,0, 5,1 & 5,2 |
+
+### Árvores da Bola de Dispersão e da Bola de Canhão
+
+As árvores de Dispersão e Canhão cuidam da eficiência dos combos e da experiência do jogador. As bolas de dispersão inundam a tela com miniprojéteis, enquanto as bolas de canhão desferem impactos pesados em alvos únicos, reforçadas por opções de disparo automatizado.
+
+O grande destaque da linha da Bola de Canhão é o nó `4,3`, que introduz a função nativa de segurar para clicar. Esse upgrade isolado elimina a fadiga nos dedos e punhos, permitindo que você simplesmente mantenha o botão principal do mouse pressionado e arraste sobre os tijolos em vez de clicar repetidamente.
+
+| ID do Nó | Classe da Bola | Nome da Habilidade & Efeito no Jogo | Custo em Pontos (Acumulado) | Pré-requisito |
+| :--- | :--- | :--- | :--- | :--- |
+| **3,0** | Bola de Dispersão | Bolas de Dispersão sempre causam dano a Tijolos Pretos | 1 (1) | Nenhum |
+| **3,1** | Bola de Dispersão | Fragmentos de dispersão de impacto único causam 2x (100% de bônus) de dano | 2 (3) | Nó 3,0 |
+| **3,2** | Bola de Dispersão | Pequena chance de as Bolas de Dispersão acertarem todos os tijolos de uma vez | 4 (7) | Nós 3,0 & 3,1 |
+| **3,3** | Bola de Dispersão | Duração dos bônus de Power-up dobrada (de 30s para 60s) | 8 (15) | Nós 3,0, 3,1 & 3,2 |
+| **4,0** | Bola de Canhão | Bolas de Canhão sempre causam dano a Tijolos Pretos | 1 (1) | Nenhum |
+| **4,1** | Bola de Canhão | Lasers sempre causam dano a Tijolos Pretos | 2 (3) | Nó 4,0 |
+| **4,2** | Bola de Canhão | Pequena chance de as Bolas de Canhão acertarem todos os tijolos de uma vez | 4 (7) | Nós 4,0 & 4,1 |
+| **4,3** | Bola de Canhão | Ativa a funcionalidade de segurar para clicar com o mouse | 8 (15) | Nós 4,0, 4,1 & 4,2 |
+
+---
+
+## Prioridade de Upgrades: Quais Habilidades Desbloquear Primeiro
+
+Nem todos os talentos são criados iguais. Ao balancear suas primeiras vitórias contra chefes, gastar pontos de forma desordenada atrasará o seu ritmo. Relatos da comunidade e experiências de veteranos indicam de forma consistente que utilidade e proteção de prestígio superam multiplicadores de dano bruto nas horas iniciais.
+
+Ao planejar sua rota pelo menu de **habilidades de idle breakout**, foque nesta progressão por categorias:
+
+### Categoria 1: Essenciais Absolutos (Início de Jogo)
+*   **Nós 0,0 & 0,1 (Manter BB):** O upgrade de maior prioridade em todo o jogo. Fazer prestígio é obrigatório para continuar progredindo, mas perder seus Tijolos Pretos acumulados quebra completamente seu ritmo de habilidades. Garantir o nó `0,1` faz com que cada sessão de chefes componha seu progresso de forma permanente.
+*   **Nó 2,1 (10x Dinheiro Offline):** Excelente para jogadores casuais e idle. Permite fechar o jogo, retornar com imensas reservas de ouro e maximizar as melhorias das bolas imediatamente ao entrar.
+
+### Categoria 2: Limpeza de Tela & Automação (Meio de Jogo)
+*   **Nó 2,3 (Limite de Velocidade para 60):** A velocidade padrão das bolas atinge o limite bem rápido. Elevar esse teto para 60 faz com que cada bola ativa na tela atinja os alvos duas vezes mais rápido, dobrando efetivamente o seu DPS total de limpeza.
+*   **Nó 4,3 (Segurar para Clicar):** Transforma o jogo manual de uma tarefa cansativa em uma ferramenta de destruição sem esforço.
+*   **Nós 5,1 & 5,3 (Contágio do Veneno):** Assim que o veneno se espalha para os blocos adjacentes, paredes espessas derretem sozinhas sem depender de impactos diretos de bolas com alto dano.
+
+### Categoria 3: Escalonamento de Fim de Jogo (Late Game)
+*   **Nó 3,3 (Dobrar Duração de Power-Ups):** Estender os buffs para 60 segundos completos faz com que os estados temporários de frenesi durem o bastante para triturar dezenas de níveis em sequência.
+*   **Nó 1,3 (Sem Escudos de Laser em Chefes):** Obrigatório para desmantelar chefes gigantescos se a sua fonte primária de dano vier de composições com lasers.
+*   **Nó 0,3 (Escalonamento Exponencial da Bola Básica):** Quando você tem dezenas de bolas básicas quicando na velocidade 60, o multiplicador exponencial de dano faz com que elas atinjam números muito superiores ao que o baixo custo de compra sugeriria.
+
+### Ordem Recomendada de Upgrades
+
+| Nível de Prioridade | Alvo de Nós | Investimento em Pontos | Benefício Primário |
+| :--- | :--- | :--- | :--- |
+| **Prioridade 1** | Nó 0,0 → 0,1 | 3 Pontos | Garante os Tijolos Pretos através de todos os resets futuros de prestígio |
+| **Prioridade 2** | Nó 2,1 | 2 Pontos | Rende 10x mais geração de dinheiro enquanto estiver ausente do jogo |
+| **Prioridade 3** | Nó 2,2 → 2,3 | 12 Pontos | Eleva o teto de velocidade para 60, aumentando drasticamente o ritmo de acertos |
+| **Prioridade 4** | Nó 4,0 → 4,3 | 15 Pontos | Concede utilidade aos lasers e a mecânica prática de segurar para clicar |
+| **Prioridade 5** | Nó 5,0 → 5,3 | 15 Pontos | Espalha a infecção, permitindo limpezas passivas por toda a tela |
+| **Prioridade 6** | Nó 3,0 → 3,3 | 15 Pontos | Aumenta todas as durações ativas de power-ups para 1 minuto completo |
+
+---
+
+## Sinergias e Estratégias de Otimização de Prestígio
+
+Maximizar o rendimento das suas **habilidades de idle breakout** exige alinhar os marcos de habilidades com os seus hábitos de compra dentro do jogo. Se você joga no PC, pode acompanhar novidades e discussões da comunidade na página oficial de [Idle Breakout on Steam](https://store.steampowered.com/app/1118180/Idle_Breakout/).
+
+### A Meta do Enxame de Bolas Básicas
+Depois de comprar o nó `0,3`, as bolas básicas deixam de ser meras figurantes iniciais. O dano delas escala de acordo com a quantidade total de bolas básicas que você possui. Ao combinar isso com o nó `2,3` (Limite de Velocidade 60), você pode lotar o campo com bolas básicas baratas que se movem a velocidades absurdas e causam dano equivalente ao do fim de jogo.
+
+### A Limpeza em Cadeia do Veneno Contagioso
+O veneno padrão depende de colisões individuais das bolas. No entanto, combinar o nó `5,1` (DoT) e o nó `5,3` (Propagação da Infecção) transforma fases com blocos amontoados em um efeito dominó. Como costumam apontar os jogadores veteranos, acertar apenas dois ou três blocos de canto pode fazer um tabuleiro inteiro com centenas de blocos se dissolver sem a necessidade de outro disparo.
+
+### Destruição Infinita com Lasers
+Geralmente, os lasers têm dificuldade contra barreiras defensivas e alvos com vida alta. Ao desbloquear o nó `4,1` (Lasers Atingem Tijolos Pretos) juntamente com o nó `1,3` (Chefes Perdem Proteção contra Lasers), sua bateria de lasers pode focar diretamente nos desafios mais difíceis sem sofrer penalidades de dano, limpando fases em questão de segundos.
+
+---
+
+## Perguntas Frequentes
+
+### As habilidades de idle breakout são resetadas ao fazer prestígio?
+Não, as habilidades compradas no menu de chefes são melhorias permanentes de conta e não são resetadas com o prestígio. No entanto, você perderá os Tijolos Pretos que não foram gastos caso faça prestígio *antes* de desbloquear o Nó `0,1` (Manter Tijolos Pretos Obtidos Após o Prestígio). Priorize esse upgrade cedo para proteger suas fichas acumuladas.
+
+### Como conseguir mais pontos de habilidade rapidamente?
+Pontos de habilidade são obtidos exclusivamente ao derrotar chefes no menu de Habilidades. Para farmar pontos rápido, invista em upgrades avançados de velocidade das bolas e contágio por veneno, limpe fases normais velozmente para coletar Tijolos Pretos e invoque chefes sempre que seu saldo permitir.
+
+### Qual é a melhor habilidade de bola de todo o jogo?
+Em termos de qualidade de vida, o nó `4,3` (Segurar para Clicar) e o nó `0,1` (Retenção de Tijolos Pretos) são considerados os mais transformadores. Para progressão direta nas fases, o nó `2,3` (Limite de Velocidade para 60) proporciona o maior aumento global de DPS para todas as classes de bola.
+
+### A habilidade de segurar para clicar funciona com melhorias de mouse?
+Sim. Ao ativar o nó `4,3`, você pode manter o botão do mouse pressionado enquanto arrasta o cursor pela tela. Ele aplica integralmente o seu dano de clique e upgrades de força atuais, exatamente como se você estivesse clicando manualmente na velocidade máxima.

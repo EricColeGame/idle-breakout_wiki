@@ -1,0 +1,165 @@
+export const metadata = {
+  title: "Guía de bolas de Idle Breakout: Tier list, estadísticas y mejores mejoras",
+  description: "Domina cada esfera en Idle Breakout. Explora estadísticas, escalado de costes, sinergias y la mejor ruta de mejoras para las bolas de Idle Breakout y supera niveles rápidamente.",
+  category: "mechanics",
+  date: "2026-09-24",
+}
+
+Dominar tu arsenal de **bolas de Idle Breakout** es el factor más crucial para superar los puntos de estancamiento y avanzar a través de miles de niveles. En este juego incremental tipo rompeladrillos engañosamente simple, los ladrillos escalan rápidamente a millones y miles de millones de puntos de vida. Saber cómo se comporta cada bola, cómo se acumulan los costes y cómo combinar distintas **bolas de Idle Breakout** determina la rapidez con la que ganas dinero, activas prestigios y dominas las fases de jefes.
+
+Tanto si estás comprando tu primera esfera como si estás optimizando una configuración multimillonaria para el juego tardío, esta guía cubre cada tipo de bola, mecánicas ocultas, fórmulas de coste y combinaciones de sinergias.
+
+---
+
+## Física central y mecánicas de las bolas de Idle Breakout
+
+En su base, el movimiento en Idle Breakout se rige por la física clásica de reflexión en 2D. Cuando se generan nuevas bolas en la pantalla, el juego las lanza en vectores aleatorios que evitan a propósito las trayectorias totalmente verticales (90°) u horizontales (0°/180°). Este diseño garantiza que las esferas nunca queden atrapadas en bucles de rebote paralelos infinitos entre dos superficies planas.
+
+Para casi todas las unidades en el tablero, el juego sigue la ley estándar de la reflexión: el ángulo de incidencia es igual al ángulo de reflexión (`i = r`) respecto a la normal de la superficie. Al golpear ladrillos, paredes laterales o barreras de jefes élite, las bolas rebotan limpiamente.
+
+```
+       Bola entrante (Ángulo i)       Bola reflejada (Ángulo r)
+                 \                               /
+                  \                             /
+                   \                           /
+    ------------------------------------------------------- (Superficie)
+```
+
+La única excepción a esta regla universal es la **Bola Francotirador**. En lugar de ejecutar un rebote geométrico real en los límites exteriores, la Bola Francotirador reajusta dinámicamente su vector para apuntar directamente hacia el ladrillo superviviente más cercano. Esta característica teledirigida de precisión la convierte en una herramienta invaluable contra ladrillos solitarios y rebeldes escondidos en las esquinas.
+
+| Atributo físico | Comportamiento de bola estándar | Comportamiento de la Bola Francotirador |
+| :--- | :--- | :--- |
+| **Colisiones con paredes** | Refleja el ángulo de incidencia (`i = r`) | Se redirige directamente hacia el ladrillo activo más cercano |
+| **Colisiones con ladrillos** | Rebote estándar | Rebote estándar |
+| **Trayectoria de aparición** | Trayectoria diagonal aleatoria | Trayectoria diagonal aleatoria |
+| **Retención de velocidad** | Velocidad constante (mejorable) | Velocidad constante (mejorable) |
+| **Penetración** | Se detiene al contacto (excepto Bola de Cañón) | Se detiene al contacto |
+
+---
+
+## Desglose completo de cada bola en Idle Breakout
+
+Cada unidad de tu repertorio cumple una función operativa bien definida. Algunas destacan por infligir daño directo masivo a un solo objetivo, mientras que otras se especializan en daño de área (AoE) o control de masas a lo largo de toda la pantalla. Comprender estas especializaciones individuales te ayudará a decidir dónde invertir tus fondos.
+
+### El arsenal estándar
+
+La siguiente tabla desglosa los costes base de compra, las tasas de inflación de precios y las habilidades innatas de todas las bolas operativas del juego:
+
+| Tipo de bola | Coste base | Aumento de coste por unidad | Habilidad innata / Comportamiento |
+| :--- | :--- | :--- | :--- |
+| **Bola Básica** | $25 | +50% | Rebota en los bordes y ladrillos, infligiendo daño de impacto a un solo objetivo. |
+| **Bola de Plasma** | $200 | +40% | Provoca un 25% de daño en área (splash) a todos los ladrillos adyacentes al objetivo principal. |
+| **Bola de Dispersión** | $10,000 | +35% | Genera mini sub-bolas de un solo impacto (50% de poder) al golpear una pared perimetral. |
+| **Bola de Cañón** | $75,000 | +30% | Atraviesa limpiamente los ladrillos sin desviarse, despejando columnas densas. |
+| **Bola de Veneno** | $75,000 | +25% | Infecta los ladrillos impactados con una desventaja permanente que duplica todo el daño recibido. |
+| **Bola Francotirador** | Nivel medio | Progresivo | Ajusta su ángulo al rebotar en las paredes para fijar el ladrillo activo más próximo. |
+
+### Roles y fortalezas de las bolas
+
+*   **Bola Básica:** El pilar fundamental de los primeros diez niveles. Aunque su utilidad cae en picado más adelante, su bajo coste base te permite generar los primeros ingresos económicos.
+*   **Bola de Plasma:** La unidad esencial para limpiar fases en el juego medio. Al infligir un 25% de daño de área sobre las casillas vecinas, las Bolas de Plasma evitan la lenta tarea de desgastar los grupos con mucha vida uno por uno.
+*   **Bola de Dispersión:** Una máquina de multiplicación de proyectiles. Cada vez que una Bola de Dispersión rebota contra las paredes perimetrales, libera fragmentos secundarios. Aunque estos fragmentos desaparecen tras un impacto, las mejoras altas de velocidad convierten el tablero en una avalancha constante de golpes.
+*   **Bola de Cañón:** Diseñada específicamente para abrir pasillos a través de formaciones densas de ladrillos. A diferencia de las esferas normales que rebotan tras el primer contacto, las Bolas de Cañón destruyen múltiples objetivos consecutivos en línea recta.
+*   **Bola de Veneno:** El multiplicador de fuerza definitivo. No destaca por su impacto inicial bruto; en su lugar, cubre los ladrillos con residuos tóxicos. Los ladrillos envenenados sufren el doble de daño (2x) de todos los impactos posteriores, reduciendo a la mitad el tiempo necesario para destruir formaciones gruesas.
+
+### Curiosidades históricas y variaciones visuales
+
+Las primeras versiones del juego incluían un prototipo conocido como la **Money Ball** (Bola de Dinero). Esta unidad contaba con estadísticas base ligeramente superiores a las de la Bola Básica y generaba ingresos adicionales por impacto, pero los desarrolladores terminaron eliminándola y reemplazándola por la Bola de Plasma para fomentar sinergias más dinámicas en lugar de una mera generación pasiva de oro.
+
+Además, los jugadores que acceden a versiones web —como la popular adaptación alojada en la [plataforma Coolmath Games](https://www.coolmathgames.com)— pueden notar una sutil diferencia visual: el sprite de la Bola de Cañón en esa versión carece de su tradicional icono de calavera, mostrando en su lugar una superficie metálica lisa y limpia.
+
+---
+
+## Escalado de bolas y crecimiento de los costes económicos
+
+Un error común entre los principiantes es comprar demasiadas unidades iniciales sin tener en cuenta la inflación compuesta de los precios. Cada vez que compras una bola adicional de un tipo concreto, su precio posterior se incrementa en un porcentaje fijo.
+
+Dado que la tasa de inflación varía ampliamente —desde el 50% en las Bolas Básicas hasta el 25% en las Bolas de Veneno—, las unidades de niveles bajos se vuelven prohibitivamente caras en relación con el daño real que aportan.
+
+```text
+\text{Coste siguiente} = \text{Coste base} \times (1 + \text{Tasa de aumento de coste})^{\text{Cantidad}}
+```
+
+| Cantidad comprada | Bola Básica (+50%) | Bola de Plasma (+40%) | Bola de Dispersión (+35%) | Bola de Veneno (+25%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Base)** | $25 | $200 | $10,000 | $75,000 |
+| **2** | $37 | $280 | $13,500 | $93,750 |
+| **3** | $56 | $392 | $18,225 | $117,187 |
+| **4** | $84 | $548 | $24,603 | $146,484 |
+| **5** | $126 | $768 | $33,215 | $183,105 |
+| **6** | $190 | $1,076 | $44,840 | $228,881 |
+| **8** | $427 | $2,109 | $81,833 | $357,627 |
+| **10** | $961 | $4,133 | $149,346 | $558,793 |
+
+Observa la rapidez con la que se dispara el coste de la Bola Básica. Comprar diez Bolas Básicas cuesta casi cuarenta veces su precio inicial, tratándose de una unidad que no ofrece daño en área ni efectos de debilitamiento. Los datos y análisis de la comunidad señalan de forma unánime que limitar la compra de Bolas Básicas a entre 4 y 6 unidades es el punto óptimo antes de ahorrar directamente para las mejoras de Plasma y Dispersión.
+
+---
+
+## Estrategias de sinergia: Las mejores combinaciones para partidas avanzadas
+
+Para avanzar sin esfuerzo a través de los niveles, tu conjunto de **bolas de Idle Breakout** debe funcionar como un sistema coordinado y no como una colección caótica de unidades al azar.
+
+```
++-----------------------------------------------------------+
+|                     SINERGIA ÓPTIMA                       |
+|                                                           |
+|    [Bola de Veneno] ------> Infecta ladrillos (Daño x2)   |
+|          |                                                |
+|          v                                                |
+|    [Bola de Cañón] -------> Atraviesa filas debilitadas   |
+|          +                                                |
+|    [Bola de Plasma] ------> Propaga daño en área          |
++-----------------------------------------------------------+
+```
+
+### La trituradora: Bola de Veneno + Bola de Cañón
+
+Esta es la combinación por excelencia para limpiar pantallas desde el juego medio hasta el juego tardío. Las Bolas de Cañón poseen una gran capacidad de penetración base, pero pueden ralentizarse cuando la vida de los ladrillos alcanza valores astronómicos.
+
+Con el respaldo de Bolas de Veneno de alta velocidad, cada ladrillo con el que choca la Bola de Cañón ya cuenta con la desventaja de daño x2. La Bola de Cañón arrasa capas verticales y horizontales completas sin perder inercia, vaciando pantallas en cuestión de segundos.
+
+### Limpieza total: Bola de Dispersión + Bola de Plasma
+
+Para pantallas con bloques dispersos de salud baja o media, combinar las Bolas de Dispersión con el daño de área del Plasma genera limpiezas caóticas y masivas.
+
+Cuando las sub-bolas de dispersión rebotan por la zona de juego golpean los ladrillos periféricos, mientras que las Bolas de Plasma castigan el interior de los bloques agrupados. Esta configuración resulta especialmente útil para generar ingresos constantes y rápidos de oro, indispensables para pagar los costosos niveles de prestigio.
+
+| Fase de progresión | Foco de bola principal | Foco de bola secundario | Objetivo táctico |
+| :--- | :--- | :--- | :--- |
+| **Juego temprano (Niveles 1–50)** | Básica (límite en 5) | Plasma (DPS principal) | Generación rápida de oro; desbloqueo de primeros efectos de área |
+| **Juego medio (Niveles 51–200)** | Plasma y Dispersión | Cañón | Limpieza de pantalla completa y rotura de líneas densas |
+| **Juego tardío (Niveles 201–1000+)** | Veneno | Cañón y Francotirador | Maximizar multiplicadores de daño y eliminar bloques jefe aislados |
+| **Avance endgame** | Veneno (al máximo) | Dispersión y Cañón | Bucles infinitos de impactos y farmeo rápido de prestigio |
+
+---
+
+## Prioridad de mejoras e inversión en estadísticas
+
+Comprar **bolas de Idle Breakout** es solo la mitad del trabajo; mejorar sus parámetros principales —Velocidad y Poder— dictará tu ritmo de avance a largo plazo.
+
+Muchos jugadores cometen el error de centrarse exclusivamente en el Poder puro ignorando la Velocidad. En un juego inactivo con físicas, la velocidad determina la frecuencia de impacto. Una bola que golpea al doble de velocidad inflige el doble de daño por segundo (DPS), al tiempo que acelera la generación de oro y la activación de habilidades como Dispersión y Salpicadura (Splash).
+
+| Parámetro de mejora | Valor estratégico | Nivel de inversión recomendado | Notas |
+| :--- | :--- | :--- | :--- |
+| **Velocidad de bola** | Esencial / Tier S | Alta prioridad (mantener cerca del máximo) | Multiplica de forma directa la frecuencia de impactos y las activaciones de efectos. |
+| **Poder de bola** | Alto / Tier A | Prioridad equilibrada | Escala el daño base a la par del aumento de vida de los ladrillos. |
+| **Cantidad de bolas** | Moderado / Tier B | Prioridad incremental | Comprar hasta que el coste supere al de las mejoras estadísticas. |
+| **Poder de clic** | Bajo / Situacional | Solo juego temprano | Pierde valor con rapidez cuando el DPS automático de las bolas escala. |
+
+Una regla general sumamente fiable entre jugadores experimentados es la **Relación 3:1**: por cada tres niveles que aumentes en Velocidad de bola, invierte uno en Poder de bola. En cuanto una unidad alcance su umbral máximo de velocidad, redirige el excedente de ganancias a adquirir el siguiente tipo de esfera o a desbloquear multiplicadores globales.
+
+---
+
+## Preguntas frecuentes sobre las bolas de Idle Breakout
+
+### ¿Qué bolas de Idle Breakout ofrecen el mayor DPS bruto?
+En términos de potencia destructiva de impacto único, la Bola de Cañón se sitúa a la cabeza gracias a su capacidad de penetración. No obstante, al evaluar el DPS global de todo el sistema, la Bola de Veneno es la unidad más determinante del juego, ya que su efecto debilita los ladrillos duplicando de forma permanente el daño infligido por cualquier otra bola en pantalla.
+
+### ¿Por qué las Bolas de Veneno se consideran indispensables en el juego tardío?
+A medida que la salud de los ladrillos escala exponencialmente a partir del nivel 200, los impactos individuales de las bolas comunes se vuelven insignificantes. La Bola de Veneno aplica un multiplicador persistente de 2x de daño a los bloques afectados. Al reducir a la mitad los golpes requeridos para romper un ladrillo, las Bolas de Veneno duplican efectivamente la velocidad de limpieza de toda tu formación.
+
+### ¿Cómo funciona la mecánica de la Bola de Dispersión en resoluciones de pantalla más pequeñas?
+La Bola de Dispersión genera sub-bolas secundarias al colisionar contra los bordes perimetrales del área de juego. Sin importar el tamaño o resolución de tu pantalla, el motor del juego calcula las cajas de colisión con las paredes de manera proporcional. En ventanas de visualización más estrechas, las Bolas de Dispersión suelen golpear las paredes con mayor frecuencia, lo que desata ráfagas de sub-bolas aún más continuas.
+
+### ¿Merece la pena comprar decenas de Bolas Básicas al inicio?
+No. Dado que las Bolas Básicas sufren un fuerte incremento de coste del +50% por cada compra, su precio sube vertiginosamente mientras que no aportan efectos de salpicadura, perforación ni utilidades adicionales. La experiencia acumulada de la comunidad demuestra que comprar más de cinco o seis Bolas Básicas es desperdiciar un oro valioso que debería reservarse para las unidades de Plasma y Dispersión.

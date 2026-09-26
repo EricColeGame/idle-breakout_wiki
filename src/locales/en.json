@@ -6,7 +6,18 @@
     "description": "Idle Breakout Wiki provides ball upgrades, gameplay guides, strategies, progression tips, and detailed information to help players break bricks faster.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
-  "nav": {},
+  "nav": {
+    "codes": "Codes",
+    "community": "Community",
+    "controls": "Controls",
+    "guide": "Guide",
+    "items": "Items",
+    "mechanics": "Mechanics",
+    "progression": "Progression",
+    "tips": "Tips",
+    "menu": "Menu",
+    "toggleTheme": "Toggle theme"
+  },
   "home": {
     "meta": {
       "title": "Idle Breakout Wiki - Balls, Upgrades & Guides",
@@ -397,7 +408,6 @@
       "secondary": "Play on itch.io"
     }
   },
-  "bosses": {},
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -428,10 +438,42 @@
     "officialYoutube": "Gameplay Video",
     "vvBuilder": "Ball & Upgrade Guide",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "mechanicsGuide": "Game Mechanics",
+    "itemsGuide": "Balls & Items",
+    "progressionGuide": "Progression Guide"
+  },
+  "codes": {
+    "overviewTitle": "Idle Breakout Codes & Import Strings",
+    "overviewDescription": "Explore working cheat codes, import strings, and save state presets for Idle Breakout."
+  },
+  "community": {
+    "overviewTitle": "Idle Breakout Community & Resources",
+    "overviewDescription": "Connect with the Idle Breakout community across Discord, Reddit, and speedrun hubs."
+  },
+  "controls": {
+    "overviewTitle": "Idle Breakout Controls & Platforms",
+    "overviewDescription": "Detailed controls, click mechanics, and platform support for web, mobile, and desktop."
+  },
+  "guide": {
+    "overviewTitle": "Idle Breakout Guides & Strategies",
+    "overviewDescription": "Comprehensive beginner walkthroughs, upgrade priorities, and optimal play strategies."
+  },
+  "items": {
+    "overviewTitle": "Idle Breakout Balls, Items & Loadouts",
+    "overviewDescription": "Complete breakdown of ball types, skill nodes, synergies, and optimal ball loadouts."
+  },
+  "mechanics": {
+    "overviewTitle": "Idle Breakout Core Mechanics & Systems",
+    "overviewDescription": "Deep dive into brick types, gold bricks, power-up spawns, bosses, and speed limits."
+  },
+  "progression": {
+    "overviewTitle": "Idle Breakout Progression & Prestige",
+    "overviewDescription": "Master level milestones, prestige resets, Black Badges, and late-game milestone scaling."
+  },
+  "tips": {
+    "overviewTitle": "Idle Breakout Tips & Speedrun Tactics",
+    "overviewDescription": "Advanced optimization techniques, setup blueprints, and world record speedrun paths."
   }
 }

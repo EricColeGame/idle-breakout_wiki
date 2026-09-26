@@ -1,0 +1,165 @@
+export const metadata = {
+  title: "Guia de Bolas de Idle Breakout: Tier List, Atributos e Melhores Upgrades",
+  description: "Domine cada esfera em Idle Breakout. Explore atributos, escalonamento de custos, sinergias e o melhor caminho de upgrades para bolas de idle breakout e avance de nível rapidamente.",
+  category: "mechanics",
+  date: "2026-09-24",
+}
+
+Dominar o seu arsenal de **bolas de idle breakout** é o fator mais crucial para superar barreiras e limpar milhares de níveis. Neste jogo incremental de quebrar tijolos deceptivamente simples, a vida dos blocos escala rapidamente para milhões e bilhões de pontos de vida. Compreender o comportamento de cada esfera, a progressão composta dos custos e como combinar diferentes **bolas de idle breakout** determina a velocidade com que você acumula dinheiro, ativa prestígios e domina as fases de chefes.
+
+Seja você um iniciante comprando sua primeira esfera ou um veterano otimizando uma composição multibilionária de fim de jogo, este guia detalha cada tipo de bola, mecânicas ocultas, fórmulas de custo e composições de sinergia ideais.
+
+---
+
+## Física Básica e Mecânicas das Bolas de Idle Breakout
+
+Em sua essência, o movimento em Idle Breakout baseia-se na física clássica de reflexão 2D. Quando novas bolas são geradas na câmara, o jogo as lança em vetores aleatórios que evitam propositalmente trajetórias perfeitamente verticais (90°) ou horizontais (0°/180°). Esse design garante que as esferas nunca fiquem presas em loops infinitos de ricochete paralelo entre duas superfícies planas.
+
+Para quase todas as unidades no tabuleiro, o jogo segue a lei padrão da reflexão: o ângulo de incidência é igual ao ângulo de reflexão (`i = r`) em relação à normal da superfície. Ao atingir tijolos, paredes laterais ou barreiras de chefes de elite, as bolas ricocheteiam de forma limpa.
+
+```
+       Bola Incidente (Ângulo i)        Bola Refletida (Ângulo r)
+                 \                               /
+                  \                             /
+                   \                           /
+    ------------------------------------------------------- (Superfície)
+```
+
+A única exceção a essa regra universal é a **Sniper Ball**. Em vez de executar um ricochete geométrico tradicional nas paredes limites externas, a Sniper Ball reajusta dinamicamente seu vetor para apontar diretamente ao tijolo ativo mais próximo. Esse recurso teleguiado a torna uma ferramenta de precisão inestimável contra tijolos isolados que sobram nos cantos.
+
+| Atributo Físico | Comportamento da Bola Padrão | Comportamento da Sniper Ball |
+| :--- | :--- | :--- |
+| **Colisões com Paredes** | Reflete o ângulo de incidência (`i = r`) | Redireciona diretamente ao tijolo ativo mais próximo |
+| **Colisões com Tijolos** | Ricochete tradicional | Ricochete tradicional |
+| **Trajetória de Surgimento** | Trajetória diagonal aleatória | Trajetória diagonal aleatória |
+| **Retenção de Velocidade** | Velocidade constante (melhorável) | Velocidade constante (melhorável) |
+| **Penetração** | Interrompe o curso no impacto (exceto Cannonball) | Interrompe o curso no impacto |
+
+---
+
+## Análise Completa de Cada Bola em Idle Breakout
+
+Cada unidade do seu repertório cumpre uma função operacional distinta. Algumas se destacam por causar dano massivo concentrado em alvo único, enquanto outras são especialistas em dano em área (AoE / splash) ou controle de multidão cobrindo toda a tela. Entender essas especializações ajuda você a investir seus recursos com máxima eficiência.
+
+### O Arsenal Padrão
+
+A tabela a seguir apresenta os custos base de compra, as taxas de inflação de preço e as habilidades inatas de todas as bolas ativas no jogo:
+
+| Tipo de Bola | Custo Base | Aumento de Custo por Unidade | Habilidade Inata / Comportamento |
+| :--- | :--- | :--- | :--- |
+| **Basic Ball** | $25 | +50% | Ricocheteia em bordas e tijolos, causando dano de impacto em alvo único. |
+| **Plasma Ball** | $200 | +40% | Causa 25% de dano em área (splash) a todos os tijolos ao redor do alvo principal. |
+| **Scatter Ball** | $10.000 | +35% | Gera miniesferas secundárias de golpe único (50% de poder) ao colidir com as paredes. |
+| **Cannonball** | $75.000 | +30% | Perfura tijolos de ponta a ponta sem desviar, limpando colunas densas. |
+| **Poison Ball** | $75.000 | +25% | Infecta os tijolos atingidos com um debuff contínuo que dobra todo o dano recebido. |
+| **Sniper Ball** | Tier Médio | Progressivo | Reorienta a rota nas paredes para travar no tijolo restante mais próximo. |
+
+### Funções e Pontos Fortes de Cada Bola
+
+*   **Basic Ball:** O cavalo de batalha dos dez primeiros níveis. Embora sua utilidade caia drasticamente mais tarde, o custo inicial baixo permite impulsionar sua geração de renda no começo da partida.
+*   **Plasma Ball:** A unidade essencial para o meio de jogo. Ao aplicar 25% de dano splash nos blocos vizinhos, a Plasma Ball elimina a necessidade exaustiva de destruir aglomerados de alta vida tijolo por tijolo.
+*   **Scatter Ball:** Uma usina de multiplicação de projéteis. Cada vez que a Scatter Ball bate nas paredes do perímetro, ela dispersa fragmentos secundários. Embora esses fragmentos desapareçam após um único impacto, upgrades de alta velocidade transformam a tela em uma avalanche ininterrupta de golpes.
+*   **Cannonball:** Criada especificamente para abrir frentes através de formações densas de blocos. Ao contrário das esferas normais que quicam no primeiro contato, a Cannonball atravessa alvos consecutivos em linha reta.
+*   **Poison Ball:** O maior multiplicador de força do jogo. Seu objetivo não é causar dano bruto imediato; em vez disso, ela cobre os tijolos com resíduo tóxico. Blocos envenenados sofrem 2x de dano de qualquer impacto subsequente, reduzindo pela metade o tempo necessário para destruir barreiras espessas.
+
+### Curiosidades Históricas e Variações Visuais
+
+Versões preliminares do jogo incluíam um protótipo conhecido como **Money Ball**. Essa unidade possuía atributos base ligeiramente superiores aos da Basic Ball e concedia ouro extra a cada acerto, mas os desenvolvedores acabaram removendo-a e introduzindo a Plasma Ball em seu lugar para valorizar sinergias ativas de jogabilidade em vez de mera geração passiva de dinheiro.
+
+Além disso, jogadores que utilizam versões web — como a edição hospedada na [plataforma Coolmath Games](https://www.coolmathgames.com) — podem notar uma pequena alteração visual: o sprite da Cannonball nessa plataforma não exibe o tradicional ícone de caveira, apresentando um acabamento metálico liso.
+
+---
+
+## Escalonamento de Bolas e Crescimento Econômico dos Custos
+
+Um erro comum entre iniciantes é comprar esferas iniciais em excesso sem levar em conta a inflação de preços composta. Sempre que você adquire uma unidade adicional de um determinado tipo, o preço da próxima aumenta em uma porcentagem fixa.
+
+Como a taxa de inflação varia consideravelmente — de 50% na Basic Ball a apenas 25% na Poison Ball —, unidades de nível baixo rapidamente se tornam proibitivamente caras em relação ao dano real que entregam.
+
+```text
+\text{Próximo Custo} = \text{Custo Base} \times (1 + \text{Taxa de Aumento de Custo})^{\text{Quantidade}}
+```
+
+| Quantidade Comprada | Basic Ball (+50%) | Plasma Ball (+40%) | Scatter Ball (+35%) | Poison Ball (+25%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Base)** | $25 | $200 | $10.000 | $75.000 |
+| **2** | $37 | $280 | $13.500 | $93.750 |
+| **3** | $56 | $392 | $18.225 | $117.187 |
+| **4** | $84 | $548 | $24.603 | $146.484 |
+| **5** | $126 | $768 | $33.215 | $183.105 |
+| **6** | $190 | $1.076 | $44.840 | $228.881 |
+| **8** | $427 | $2.109 | $81.833 | $357.627 |
+| **10** | $961 | $4.133 | $149.346 | $558.793 |
+
+Observe a velocidade com que o custo da Basic Ball dispara. Comprar dez unidades de Basic Ball custa quase quarenta vezes o valor original por uma esfera que não possui propriedades de dano em área nem de enfraquecimento. Relatos consistentes da comunidade apontam que limitar a compra de Basic Balls entre 4 e 6 unidades é o ponto ideal antes de economizar dinheiro diretamente para os upgrades de Plasma e Scatter.
+
+---
+
+## Estratégias de Sinergia: Melhores Composições para Níveis Avançados
+
+Para progredir de fase sem esforço, sua coleção de **bolas de idle breakout** precisa operar como um sistema integrado, e não como um aglomerado desordenado de unidades aleatórias.
+
+```
++-----------------------------------------------------------+
+|                    SINERGIA IDEAL                         |
+|                                                           |
+|    [Poison Ball] --------> Infecta Tijolos (Dano 2x)      |
+|          |                                                |
+|          v                                                |
+|    [Cannonball] ---------> Perfura Fileiras Enfraquecidas |
+|          +                                                |
+|    [Plasma Ball] --------> Espalha Splash no Aglomerado   |
++-----------------------------------------------------------+
+```
+
+### O Moedor de Blocos: Poison + Cannonball
+
+Esta é a combinação primária para varrer o meio e o fim de jogo. As Cannonballs possuem alto poder de perfuração base, mas podem perder ímpeto quando os pontos de vida dos tijolos atingem números astronômicos.
+
+Com o suporte de Poison Balls de alta velocidade, cada tijolo que a Cannonball encontra pelo caminho já carrega o debuff de 2x de dano. Assim, a Cannonball rasga camadas inteiras na vertical e na horizontal sem ser desacelerada, limpando a tela em questão de segundos.
+
+### O Limpador de Telas: Scatter + Plasma
+
+Para tabuleiros repletos de blocos dispersos de vida baixa a média, combinar a multiplicação da Scatter Ball com o dano em área da Plasma Ball resulta em eliminações em massa.
+
+Conforme as miniesferas da Scatter Ball ricocheteiam por toda a arena, elas atingem os tijolos periféricos, enquanto as Plasma Balls castigam o interior dos aglomerados. Essa configuração é excelente para produzir ganhos contínuos e ultrarrápidos de ouro, fundamentais para bancar níveis avançados de prestígio.
+
+| Estágio de Progressão | Foco Principal de Bola | Foco Secundário de Bola | Objetivo Tático |
+| :--- | :--- | :--- | :--- |
+| **Início de Jogo (Níveis 1–50)** | Basic (Travar em 5) | Plasma (DPS Principal) | Rápida geração de renda; desbloquear primeiros efeitos de splash |
+| **Meio de Jogo (Níveis 51–200)** | Plasma e Scatter | Cannonball | Limpeza ampla de tela e ruptura de linhas densas de blocos |
+| **Fim de Jogo (Níveis 201–1000+)** | Poison | Cannonball e Sniper | Maximizar multiplicadores de dano e abater blocos isolados de chefes |
+| **Avanço Extremo (Endgame)** | Poison (No Máximo) | Scatter e Cannonball | Loops de dano infinito por volume de acertos e farm veloz de prestígio |
+
+---
+
+## Prioridade de Upgrades e Investimento em Atributos
+
+Adquirir **bolas de idle breakout** é apenas o primeiro passo; aprimorar seus atributos essenciais — Velocidade (Speed) e Poder (Power) — dita o ritmo da sua evolução a longo prazo.
+
+Muitos jogadores cometem o erro de investir unicamente em Poder bruto e ignorar a Velocidade. Em um jogo incremental baseado em física, a velocidade governa a frequência de impactos. Uma bola com o dobro de velocidade gera o dobro de dano por segundo (DPS), acelerando em conjunto a produção de ouro e a ativação de habilidades como Scatter e Splash.
+
+| Parâmetro de Upgrade | Valor Estratégico | Nível Recomendado de Investimento | Observações |
+| :--- | :--- | :--- | :--- |
+| **Velocidade da Bola (Speed)** | Essencial / Tier S | Alta Prioridade (Manter perto do limite) | Multiplica diretamente a frequência total de acertos e efeitos de habilidades. |
+| **Poder da Bola (Power)** | Alto / Tier A | Prioridade Balanceada | Garante que o dano base acompanhe o crescimento da vida dos tijolos. |
+| **Quantidade de Bolas (Count)** | Moderado / Tier B | Prioridade Gradual | Compre até o patamar em que o custo supere os upgrades de atributos. |
+| **Poder de Clique (Click Power)** | Baixo / Situacional | Somente Início de Jogo | Perde relevância assim que o DPS automatizado das bolas escala. |
+
+Uma diretriz confiável utilizada por jogadores veteranos é a **Proporção 3:1**: para cada três níveis investidos em Velocidade da Bola, aplique um em Poder da Bola. Quando uma unidade atingir seu teto de velocidade viável, redirecione os lucros excedentes para adquirir a próxima categoria de esferas ou desbloquear multiplicadores globais.
+
+---
+
+## Perguntas Frequentes Sobre as Bolas de Idle Breakout
+
+### Quais bolas de idle breakout entregam o maior DPS bruto?
+Em termos de força destrutiva pura por impacto único, a Cannonball lidera graças à sua habilidade de perfuração. No entanto, ao avaliar o DPS geral do sistema, a Poison Ball é a peça mais poderosa do jogo, pois seu debuff dobra de forma permanente o dano aplicado por todas as outras esferas presentes na tela.
+
+### Por que as Poison Balls são consideradas indispensáveis no fim de jogo?
+Conforme a vida dos blocos cresce exponencialmente a partir do nível 200, os impactos individuais das bolas normais tornam-se inexpressivos. A Poison Ball introduz um multiplicador permanente de 2x de dano aos blocos afetados. Ao reduzir pela metade os impactos necessários para quebrar um tijolo, a Poison Ball praticamente dobra o rendimento e a velocidade de limpeza de toda a sua composição.
+
+### Como a mecânica da Scatter Ball se comporta em resoluções de tela menores?
+A Scatter Ball cria subesferas secundárias ao bater nas bordas do perímetro da área jogável. O motor do jogo calcula os limites de colisão das paredes de forma proporcional, independentemente do tamanho da tela. Em janelas mais estreitas, a Scatter Ball tende a atingir as bordas com uma frequência ligeiramente maior, gerando rajadas rápidas de miniesferas adicionais.
+
+### Vale a pena comprar dezenas de Basic Balls no início do jogo?
+Não. Como as Basic Balls sofrem um acréscimo expressivo de +50% no custo a cada nova compra, seu preço sobe vertiginosamente sem fornecer dano em área, perfuração ou utilidade complementar. A experiência prática mostra que ultrapassar cinco ou seis Basic Balls é um desperdício de ouro valioso que deveria ser poupado para comprar unidades de Plasma e Scatter.

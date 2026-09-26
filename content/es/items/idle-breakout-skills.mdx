@@ -1,0 +1,161 @@
+export const metadata = {
+  title: "Guía de habilidades de Idle Breakout: mejores mejoras, árboles y builds contra jefes",
+  description: "Domina el árbol de habilidades completo de Idle Breakout con nuestra guía detallada sobre batallas contra jefes, mejoras de bolas, retención por prestigio y prioridades de build.",
+  category: "items",
+  date: "2026-09-24",
+};
+
+Avanzar a través de miles de niveles en este aclamado clásico arcade incremental requiere mucho más que simplemente comprar bolas básicas y esperar a que el dinero entre poco a poco. Para dominar el interminable bucle de progresión destruyendo bloques, dominar tus **habilidades de Idle Breakout** es el paso más crucial que puedes dar. Al invertir estratégicamente tus valiosos puntos en las **habilidades de Idle Breakout** adecuadas, desbloquearás mecánicas que cambiarán las reglas del juego, tales como conservar los Ladrillos Negros tras reiniciar con prestigio, eliminar escudos láser y cuadruplicar el daño de área.
+
+Tanto si estás ante tu primer enfrentamiento contra un jefe como si buscas optimizar carreras avanzadas de prestigio, orientarte en la matriz de mejoras puede resultar abrumador. A continuación, encontrarás un desglose exhaustivo de cada nodo de habilidad, costes de mejora, niveles de prioridad y estrategias prácticas de juego para potenciar tus partidas al máximo.
+
+## Cómo funcionan el árbol de habilidades y las batallas contra jefes
+
+En *Idle Breakout*, las habilidades no se compran con oro común ni dinero corriente. En su lugar, se encuentran en un menú de progresión exclusivo impulsado por los **Ladrillos Negros (Black Bricks o BB)** y las **batallas contra jefes**. Comprender este ciclo resulta fundamental antes de gastar recursos a ciegas.
+
+Para conseguir puntos de habilidad:
+1. Destruye los ladrillos negros que aparecen en los niveles habituales para recolectar Ladrillos Negros (a menudo llamados por los veteranos BB o Black Bucks).
+2. Abre la pestaña Habilidades (Skills) y gasta tus Ladrillos Negros acumulados para invocar y desafiar a poderosos Jefes.
+3. Derrota a estos jefes para obtener Puntos de Habilidad, que sirven para desbloquear nodos específicos distribuidos en una cuadrícula de coordenadas de 6 filas.
+
+El árbol de habilidades se organiza en filas numeradas del `0` al `5`, donde cada fila se corresponde directamente con uno de los seis tipos principales de bola del juego: Bola Básica (`0,x`), Bola de Plasma (`1,x`), Bola Francotiradora (`2,x`), Bola Dispersora (`3,x`), Bola de Cañón (`4,x`) y Bola de Veneno (`5,x`). Cada fila cuenta con cuatro niveles progresivos (columnas del `0` al `3`).
+
+A excepción del rasgo básico de la Bola Francotiradora (que viene desbloqueado de forma predeterminada), todas las ramas exigen comprar los nodos anteriores de manera secuencial.
+
+### Resumen del sistema de habilidades y mecánicas
+
+| Categoría | Detalles mecánicos | Valor estratégico |
+| :--- | :--- | :--- |
+| **Moneda** | Ladrillos Negros (se obtienen al romper bloques negros raros) | Alto; necesarios para invocar jefes e impulsar el progreso tardío |
+| **Obtención de habilidades** | Derrotar a los Jefes invocados en el menú de Habilidades | Mecánica central para desbloquear mejoras pasivas permanentes |
+| **Diseño de cuadrícula** | 6 filas (clases de bola) × 4 niveles (grados del 0 al 3) | Ruta estructurada que requiere activación lineal de nodos por tipo de bola |
+| **Interacción con el Prestigio** | Las habilidades se conservan tras el prestigio; los BB se pueden retener con el nodo `0,1` | Permite que tu progreso crezca exponencialmente a través de reinicios |
+| **Nodos totales** | 24 casillas individuales de mejora | Equilibrado entre DPS directo, calidad de vida y economía |
+
+---
+
+## Desglose completo de todas las habilidades de Idle Breakout
+
+Cada tipo de bola posee una identidad propia bien definida. Los nodos iniciales garantizan que tus bolas puedan golpear Ladrillos Negros independientemente de las condiciones en pantalla, mientras que los niveles posteriores aportan activaciones de daño en área (AoE) para limpiar niveles, multiplicadores escalables y automatización de mecánicas.
+
+### Árboles de la Bola Básica y la Bola Francotiradora
+
+La fila de la Bola Básica ofrece sin duda las ventajas de calidad de vida más importantes para el inicio de la partida, mientras que la fila de la Bola Francotiradora dispara tus ganancias desconectado (offline) y aumenta el límite de velocidad global.
+
+```
+Coordenadas de la cuadrícula:
+Fila 0 = Bola Básica (Nodos 0,0 a 0,3)
+Fila 2 = Bola Francotiradora (Nodos 2,0 a 2,3)
+```
+
+El nodo `2,0` es gratuito desde el momento en que desbloqueas el menú, convirtiendo a las Bolas Francotiradoras en una base fiable para romper bloques negros en las primeras fases.
+
+| ID de nodo | Clase de bola | Nombre de habilidad y efecto en el juego | Coste en puntos (acumulativo) | Requisito previo |
+| :--- | :--- | :--- | :--- | :--- |
+| **0,0** | Bola Básica | Las Bolas Básicas siempre dañan los Ladrillos Negros | 1 (1) | Ninguno |
+| **0,1** | Bola Básica | Conserva los Ladrillos Negros obtenidos tras el Prestigio | 2 (3) | Nodo 0,0 |
+| **0,2** | Bola Básica | Pequeña probabilidad de que las Bolas Básicas golpeen todos los ladrillos a la vez | 4 (7) | Nodos 0,0 y 0,1 |
+| **0,3** | Bola Básica | El daño de las Bolas Básicas se multiplica por cada Bola Básica en propiedad | 8 (15) | Nodos 0,0, 0,1 y 0,2 |
+| **2,0** | Bola Francotiradora | Las Bolas Francotiradoras siempre dañan los Ladrillos Negros | 0 (0) | Desbloqueado por defecto |
+| **2,1** | Bola Francotiradora | Multiplica por 10 las ganancias de dinero desconectado | 2 (2) | Nodo 2,0 |
+| **2,2** | Bola Francotiradora | Pequeña probabilidad de que las Bolas Francotiradoras golpeen todos los ladrillos a la vez | 4 (6) | Nodos 2,0 y 2,1 |
+| **2,3** | Bola Francotiradora | Aumenta el límite de velocidad máxima de las bolas a 60 | 8 (14) | Nodos 2,0, 2,1 y 2,2 |
+
+### Árboles de la Bola de Plasma y la Bola de Veneno
+
+Si tu objetivo es limpiar pantallas abarrotadas al instante, las ramas de Plasma y Veneno no tienen rival. El Plasma destaca por su daño de área explosivo y por anular los escudos de los jefes, mientras que el Veneno aplica un daño continuo e implacable a lo largo del tiempo (DoT) capaz de propagarse como pólvora entre bloques agrupados.
+
+*   **Bola de Plasma (Fila 1):** Se enfoca intensamente en la limpieza de área pura. Desbloquear el nodo `1,3` despoja a los ladrillos de jefe de su molesta inmunidad al láser, creando una sinergia gigantesca con configuraciones de cañón orientadas a láser.
+*   **Bola de Veneno (Fila 5):** Convierte los ladrillos de alta salud en objetivos que se derriten rápidamente. Una vez infectados, los ladrillos sufren daño continuo por segundo, reciben daño amplificado de impactos posteriores y, en el nivel 5,3, infectan a los ladrillos adyacentes.
+
+| ID de nodo | Clase de bola | Nombre de habilidad y efecto en el juego | Coste en puntos (acumulativo) | Requisito previo |
+| :--- | :--- | :--- | :--- | :--- |
+| **1,0** | Bola de Plasma | Las Bolas de Plasma siempre dañan los Ladrillos Negros | 1 (1) | Ninguno |
+| **1,1** | Bola de Plasma | El daño de área de las Bolas de Plasma se multiplica por 4 | 2 (3) | Nodo 1,0 |
+| **1,2** | Bola de Plasma | Pequeña probabilidad de que las Bolas de Plasma golpeen todos los ladrillos a la vez | 4 (7) | Nodos 1,0 y 1,1 |
+| **1,3** | Bola de Plasma | Los Ladrillos de Jefe pierden toda protección contra el láser | 8 (15) | Nodos 1,0, 1,1 y 1,2 |
+| **5,0** | Bola de Veneno | Las Bolas de Veneno siempre dañan los Ladrillos Negros | 1 (1) | Ninguno |
+| **5,1** | Bola de Veneno | Los ladrillos envenenados reciben daño continuo con el tiempo (DPS) | 2 (3) | Nodo 5,0 |
+| **5,2** | Bola de Veneno | Pequeña probabilidad de que las Bolas de Veneno golpeen todos los ladrillos a la vez | 4 (7) | Nodos 5,0 y 5,1 |
+| **5,3** | Bola de Veneno | Los ladrillos envenenados contagian lentamente a los ladrillos adyacentes | 8 (15) | Nodos 5,0, 5,1 y 5,2 |
+
+### Árboles de la Bola Dispersora y la Bola de Cañón
+
+Los árboles de la Bola Dispersora y la Bola de Cañón se encargan de la eficiencia de combos y la comodidad del jugador. Las bolas dispersoras inundan el escenario con diminutos proyectiles, mientras que las bolas de cañón asestan impactos colosales a objetivos individuales con el respaldo de opciones de disparo automatizado.
+
+Lo más destacado de la línea de Cañón es el nodo `4,3`, que incorpora una función nativa de mantener pulsado para hacer clic. Esta mejora por sí sola elimina la fatiga de la muñeca al permitirte simplemente mantener presionado el botón principal del ratón y deslizarlo sobre los ladrillos en lugar de hacer clics repetitivos.
+
+| ID de nodo | Clase de bola | Nombre de habilidad y efecto en el juego | Coste en puntos (acumulativo) | Requisito previo |
+| :--- | :--- | :--- | :--- | :--- |
+| **3,0** | Bola Dispersora | Las Bolas Dispersoras siempre dañan los Ladrillos Negros | 1 (1) | Ninguno |
+| **3,1** | Bola Dispersora | Los fragmentos dispersos de un solo impacto infligen el doble de daño (+100%) | 2 (3) | Nodo 3,0 |
+| **3,2** | Bola Dispersora | Pequeña probabilidad de que las Bolas Dispersoras golpeen todos los ladrillos a la vez | 4 (7) | Nodos 3,0 y 3,1 |
+| **3,3** | Bola Dispersora | La duración de las mejoras (power-ups) se duplica (de 30 s a 60 s) | 8 (15) | Nodos 3,0, 3,1 y 3,2 |
+| **4,0** | Bola de Cañón | Las Bolas de Cañón siempre dañan los Ladrillos Negros | 1 (1) | Ninguno |
+| **4,1** | Bola de Cañón | Los láseres siempre dañan los Ladrillos Negros | 2 (3) | Nodo 4,0 |
+| **4,2** | Bola de Cañón | Pequeña probabilidad de que las Bolas de Cañón golpeen todos los ladrillos a la vez | 4 (7) | Nodos 4,0 y 4,1 |
+| **4,3** | Bola de Cañón | Habilita la función de mantener pulsado el ratón para hacer clic | 8 (15) | Nodos 4,0, 4,1 y 4,2 |
+
+---
+
+## Prioridad de mejoras: qué habilidades desbloquear primero
+
+No todos los talentos rinden de la misma forma. Al coordinar tus primeras victorias contra jefes, gastar puntos de manera desordenada ralentizará tu ritmo. La comunidad y los jugadores experimentados coinciden en que la utilidad y la protección tras el prestigio están por encima de los multiplicadores de daño puro durante las primeras horas.
+
+Al planificar tu ruta en el menú de **habilidades de Idle Breakout**, procura seguir este orden de niveles:
+
+### Nivel 1: Esenciales absolutos (Fase inicial)
+*   **Nodos 0,0 y 0,1 (Retener BB):** La mejora de mayor prioridad de todo el juego. Hacer prestigio es obligatorio para avanzar, pero perder los Ladrillos Negros acumulados frena por completo el ritmo de adquisición de habilidades. Desbloquear `0,1` asegura que cada enfrentamiento contra jefes acumule progreso de forma permanente.
+*   **Nodo 2,1 (10x Dinero desconectado):** Imprescindible para jugadores inactivos. Te permite salir de la partida, volver con enormes reservas de oro y maximizar las mejoras de las bolas nada más iniciar sesión.
+
+### Nivel 2: Limpieza de pantalla y automatización (Fase intermedia)
+*   **Nodo 2,3 (Límite de velocidad a 60):** La velocidad estándar de las bolas alcanza su tope relativamente rápido. Subir este techo a 60 permite que cada bola activa en pantalla golpee a los objetivos con el doble de frecuencia, duplicando de facto tu DPS total de limpieza.
+*   **Nodo 4,3 (Mantener pulsado para hacer clic):** Transforma el juego manual, pasando de ser una tarea tediosa a una herramienta de despeje cómoda y sin esfuerzo.
+*   **Nodos 5,1 y 5,3 (Contagio de veneno):** En cuanto el veneno se propaga por los bloques adyacentes, las paredes más gruesas se deshacen solas sin necesidad de impactos directos de bolas de gran daño.
+
+### Nivel 3: Escalado tardío (Fase avanzada)
+*   **Nodo 3,3 (Duplicar duración de potenciadores):** Ampliar los potenciadores a 60 segundos completos hace que los estados de frenesí temporales duren lo suficiente como para arrasar con varias tandas completas de niveles.
+*   **Nodo 1,3 (Sin escudos láser en jefes):** Obligatorio para desmantelar encuentros multitudinarios de jefes si tu daño principal proviene de configuraciones láser.
+*   **Nodo 0,3 (Escalado exponencial de Bola Básica):** Cuando tienes docenas de bolas básicas rebotando a velocidad 60, su multiplicador de daño exponencial hace que golpeen con una potencia muy superior a lo que sugiere su bajo coste de compra.
+
+### Orden de mejora recomendado
+
+| Nivel de prioridad | Nodo objetivo | Inversión de puntos | Beneficio principal |
+| :--- | :--- | :--- | :--- |
+| **Prioridad 1** | Nodo 0,0 → 0,1 | 3 Puntos | Conserva los Ladrillos Negros en todos los reinicios de prestigio futuros |
+| **Prioridad 2** | Nodo 2,1 | 2 Puntos | Genera 10 veces más dinero mientras estás lejos de la partida |
+| **Prioridad 3** | Nodo 2,2 → 2,3 | 12 Puntos | Aumenta el tope de velocidad de las bolas a 60, disparando la frecuencia de impacto |
+| **Prioridad 4** | Nodo 4,0 → 4,3 | 15 Puntos | Otorga utilidad a los láseres y la cómoda función de mantener pulsado para hacer clic |
+| **Prioridad 5** | Nodo 5,0 → 5,3 | 15 Puntos | Propaga la infección, permitiendo despejar pantallas enteras de forma pasiva |
+| **Prioridad 6** | Nodo 3,0 → 3,3 | 15 Puntos | Extiende la duración de todos los potenciadores activos a 1 minuto |
+
+---
+
+## Sinergias y estrategias de optimización de prestigio
+
+Maximizar el rendimiento de tus **habilidades de Idle Breakout** requiere combinar los hitos de habilidad con buenos hábitos de compra en el juego. Si juegas en PC, puedes seguir las actualizaciones del desarrollo y de la comunidad a través del punto de encuentro oficial de [Idle Breakout en Steam](https://store.steampowered.com/app/1118180/Idle_Breakout/).
+
+### El meta del enjambre de Bolas Básicas
+Una vez que adquieres el nodo `0,3`, las bolas básicas dejan de ser un simple recurso inicial. Su daño escala en función del número total de bolas básicas que poseas. Al emparejar esto con el nodo `2,3` (Límite de velocidad a 60), puedes desplegar en masa bolas básicas muy económicas que se mueven a velocidades de vértigo e infligen valores de ataque propios de etapas avanzadas.
+
+### Limpieza de pantalla por veneno contagioso
+El veneno estándar depende de las colisiones directas de cada bola. Sin embargo, al combinar el nodo `5,1` (DoT) con el nodo `5,3` (Propagación de infección), las pantallas con formaciones compactas de ladrillos se transforman en una hilera de fichas de dominó cayendo en cadena. Como suelen destacar los analistas de la comunidad, bastan dos o tres impactos en bloques de una esquina para que un tablero de cientos de ladrillos se desintegre sin tener que disparar de nuevo.
+
+### Trituración infinita con láser
+Por lo general, los láseres sufren bastante ante barreras defensivas especializadas y objetivos con mucha vida. Al desbloquear el nodo `4,1` (Los láseres dañan Ladrillos Negros) junto con el nodo `1,3` (Los jefes pierden la protección contra láser), tus baterías láser podrán concentrarse en los retos más duros sin penalizaciones de daño, superando fases en cuestión de segundos.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Se reinician las habilidades de Idle Breakout al hacer prestigio?
+No, las habilidades compradas en el menú de jefes son mejoras permanentes para tu cuenta y no se reinician al hacer prestigio. Sin embargo, perderás los Ladrillos Negros que no hayas gastado si haces prestigio *antes* de desbloquear el nodo `0,1` (Conservar los Ladrillos Negros obtenidos tras el Prestigio). Prioriza esa mejora cuanto antes para proteger tus fichas acumuladas.
+
+### ¿Cómo conseguir más puntos de habilidad rápidamente?
+Los puntos de habilidad se obtienen exclusivamente derrotando jefes dentro del menú de Habilidades. Para farmear puntos de forma rápida, invierte en mejoras de velocidad de bolas de alto nivel y en el contagio de veneno, limpia niveles estándar velozmente para reunir Ladrillos Negros e invoca jefes cada vez que tu saldo acumulado te lo permita.
+
+### ¿Cuál es la mejor habilidad de bola del juego?
+En cuanto a comodidad y calidad de vida, el nodo `4,3` (Mantener pulsado para hacer clic) y el nodo `0,1` (Retención de Ladrillos Negros) se consideran los más determinantes. Si hablamos puramente de progresión de niveles, el nodo `2,3` (Límite de velocidad a 60) proporciona el mayor incremento global de DPS para todas las clases de bolas.
+
+### ¿Funciona la habilidad de mantener pulsado con las mejoras de ratón?
+Sí. Activar el nodo `4,3` te permite mantener presionado el botón del ratón mientras lo arrastras por el tablero. Aplica a la perfección tu daño por clic actual y todas las mejoras de potencia adquiridas, exactamente igual que si estuvieras haciendo clic manual a la máxima velocidad posible.

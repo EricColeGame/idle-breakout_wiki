@@ -1,0 +1,165 @@
+export const metadata = {
+  title: "Idle Breakout Bälle-Guide: Tier-List, Werte und beste Upgrades",
+  description: "Meistere jede Kugel in Idle Breakout. Entdecke Werte, Kostenskalierung, Synergien und den besten Upgrade-Pfad für Idle Breakout Bälle, um Level schnell zu meistern.",
+  category: "mechanics",
+  date: "2026-09-24",
+}
+
+Das Beherrschen deines Arsenals an **Idle Breakout Bällen** ist der wichtigste Einzelfaktor, um Plateaus zu überwinden und Tausende von Leveln zu bewältigen. In diesem trügerisch einfachen Brick-Breaker-Idle-Spiel skalieren die Trefferpunkte der Steine schnell in Millionen- und Milliardenhöhe. Zu wissen, wie sich jeder Ball verhält, wie sich die Kosten summieren und wie man verschiedene **Idle Breakout Bälle** kombiniert, bestimmt, wie schnell du Geld verdienst, Prestiges auslöst und Boss-Stufen dominierst.
+
+Egal, ob du gerade deine erste Kugel kaufst oder ein milliardenschweres Late-Game-Setup optimierst – dieser Guide deckt jeden Balltyp, versteckte Mechaniken, Kostenformeln und Synergie-Loadouts ab.
+
+---
+
+## Kernphysik und Mechaniken der Idle Breakout Bälle
+
+In seinem Kern basiert die Bewegung in Idle Breakout auf klassischer 2D-Reflexionsphysik. Wenn neue Bälle im Spielfeld erscheinen, schießt das Spiel sie in zufälligen Vektoren ab, die bewusst exakt vertikale (90°) oder horizontale (0°/180°) Bahnen vermeiden. Dieses Design stellt sicher, dass Kugeln niemals in endlosen parallelen Abprallschleifen zwischen zwei flachen Oberflächen gefangen werden.
+
+Für fast jede Einheit auf dem Spielfeld folgt das Spiel dem klassischen Reflexionsgesetz: Der Einfallswinkel entspricht dem Reflexionswinkel (`i = r`) relativ zum Einfallslot. Beim Treffen von Steinen, Seitenwänden oder Elite-Boss-Barrieren prallen die Bälle sauber ab.
+
+```
+       Eingehender Ball (Winkel i)    Reflektierter Ball (Winkel r)
+                 \                               /
+                  \                             /
+                   \                           /
+    ------------------------------------------------------- (Oberfläche)
+```
+
+Die einzige Ausnahme von dieser universellen Regel ist der **Sniper Ball**. Anstatt einen echten geometrischen Abpraller an den Außenwänden auszuführen, passt der Sniper Ball seinen Vektor dynamisch an, um direkt auf den nächsten verbleibenden Stein zu zielen. Diese zielsuchende Homing-Funktion macht ihn zu einem unschätzbaren Präzisionswerkzeug gegen hartnäckige einzelne Steine in Ecken.
+
+| Physik-Attribut | Standard-Ballverhalten | Sniper-Ball-Verhalten |
+| :--- | :--- | :--- |
+| **Wandkollisionen** | Reflektiert den Einfallswinkel (`i = r`) | Zielt direkt auf den nächsten aktiven Stein um |
+| **Steinkollisionen** | Standardmäßiges Abprallen | Standardmäßiges Abprallen |
+| **Spawn-Trajektorie** | Zufällige diagonale Flugbahn | Zufällige diagonale Flugbahn |
+| **Geschwindigkeitserhalt** | Konstante Geschwindigkeit (verbesserbar) | Konstante Geschwindigkeit (verbesserbar) |
+| **Durchdringung** | Stoppt bei Kontakt (außer Cannonball) | Stoppt bei Kontakt |
+
+---
+
+## Vollständige Übersicht aller Bälle in Idle Breakout
+
+Jede Einheit in deinem Roster erfüllt eine bestimmte operative Rolle. Manche zeichnen sich durch rohen Einzeltreffer-Berstschaden aus, während andere auf Flächenschaden (AoE-Splash) oder bildschirmweite Massenkontrolle spezialisiert sind. Das Verständnis dieser individuellen Spezialisierungen hilft dir zu entscheiden, wohin du dein Geld investierst.
+
+### Das Standard-Arsenal
+
+Die folgende Tabelle schlüsselt die Basiskaufkosten, Preissteigerungsraten und angeborenen Fähigkeiten aller verfügbaren Bälle im Spiel auf:
+
+| Balltyp | Grundkosten | Kostensteigerung pro Einheit | Angeborene Fähigkeit / Verhalten |
+| :--- | :--- | :--- | :--- |
+| **Basic Ball** | 25 $ | +50 % | Prallt an Begrenzungen und Steinen ab und verursacht Einzelschaden. |
+| **Plasma Ball** | 200 $ | +40 % | Löst 25 % Flächenschaden an allen Steinen rund um das Primärziel aus. |
+| **Scatter Ball** | 10.000 $ | +35 % | Erzeugt Mini-Subbälle für Einzeltreffer (50 % Stärke), sobald er eine Begrenzungswand trifft. |
+| **Cannonball** | 75.000 $ | +30 % | Durchdringt Steine sauber ohne abzulenken und räumt dichte Säulen frei. |
+| **Poison Ball** | 75.000 $ | +25 % | Infiziert getroffene Steine mit einem dauerhaften Debuff, der jeglichen eingehenden Schaden verdoppelt. |
+| **Sniper Ball** | Mittlere Stufe | Progressiv | Richtet seinen Winkel an Arenawänden neu aus, um den nächsten verbleibenden Stein anzuvisieren. |
+
+### Rollen und Stärken der Bälle
+
+*   **Basic Ball:** Das Arbeitspferd der ersten zehn Level. Obwohl sein Nutzen später drastisch abfällt, ermöglicht sein niedriger Grundpreis einen frühen Einkommensschub.
+*   **Plasma Ball:** Der Inbegriff des Mid-Game-Clearers. Durch 25 % Flächenschaden auf benachbarte Steine umgehen Plasma Balls den mühsamen Prozess, dichte Cluster mit hoher Gesundheit einzeln abzuarbeiten.
+*   **Scatter Ball:** Ein Kraftpaket zur Projektilvervielfachung. Jedes Mal, wenn ein Scatter Ball an den Außenwänden abprallt, verstreut er sekundäre Fragmente. Obwohl diese Fragmente nach einem Treffer verfallen, verwandeln hohe Ballgeschwindigkeits-Upgrades das Spielfeld in eine Lawine von Treffern.
+*   **Cannonball:** Speziell dafür entwickelt, Schneisen durch hochdichte Steinanordnungen zu schlagen. Im Gegensatz zu normalen Kugeln, die nach einem Kontakt abprallen, zerschlägt der Cannonball aufeinanderfolgende Ziele in gerader Linie.
+*   **Poison Ball:** Der ultimative Kraftmultiplikator. Er konzentriert sich nicht auf rohen Sofortschaden, sondern überzieht Steine mit giftigen Rückständen. Getroffene Steine erleiden doppelten Schaden (2x) durch alle nachfolgenden Treffer, was die Zeit zum Beseitigen dicker Formationen effektiv halbiert.
+
+### Historisches Trivia und visuelle Variationen
+
+Frühe Versionen des Spiels enthielten einen Prototyp namens **Money Ball**. Diese Einheit verfügte über etwas höhere Basiswerte als der Basic Ball und generierte Bonus-Einnahmen pro Treffer. Die Entwickler entfernten ihn jedoch letztendlich und ersetzten ihn durch den Plasma Ball, um aktive Gameplay-Synergien gegenüber rein passivem Goldverdienst zu fördern.
+
+Zusätzlich bemerken Spieler, die Web-Versionen nutzen – wie beispielsweise das beliebte Web-Build auf der [Coolmath Games-Plattform](https://www.coolmathgames.com) –, möglicherweise einen feinen visuellen Unterschied: Das Cannonball-Sprite in dieser Version besitzt nicht das traditionelle Totenkopfsymbol, sondern zeigt stattdessen eine schlichte, massive Metalloberfläche.
+
+---
+
+## Ball-Skalierung und wirtschaftliches Kostenwachstum
+
+Ein häufiger Fehler von Anfängern besteht darin, zu viele frühe Einheiten zu kaufen, ohne die Zinseszins-Effekte der Preisinflation zu berücksichtigen. Jedes Mal, wenn du eine weitere Kugel eines bestimmten Typs kaufst, steigt deren nachfolgender Preis um einen festen Prozentsatz. 
+
+Da die Inflationsrate stark variiert – von 50 % beim Basic Ball bis hinab zu 25 % beim Poison Ball –, werden Einheiten niedrigerer Stufen im Verhältnis zu ihrer tatsächlichen Schadensleistung schnell unerschwinglich teuer.
+
+```text
+\text{Nächste Kosten} = \text{Grundkosten} \times (1 + \text{Kostensteigerungsrate})^{\text{Anzahl}}
+```
+
+| Kaufanzahl | Basic Ball (+50 %) | Plasma Ball (+40 %) | Scatter Ball (+35 %) | Poison Ball (+25 %) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Basis)** | 25 $ | 200 $ | 10.000 $ | 75.000 $ |
+| **2** | 37 $ | 280 $ | 13.500 $ | 93.750 $ |
+| **3** | 56 $ | 392 $ | 18.225 $ | 117.187 $ |
+| **4** | 84 $ | 548 $ | 24.603 $ | 146.484 $ |
+| **5** | 126 $ | 768 $ | 33.215 $ | 183.105 $ |
+| **6** | 190 $ | 1.076 $ | 44.840 $ | 228.881 $ |
+| **8** | 427 $ | 2.109 $ | 81.833 $ | 357.627 $ |
+| **10** | 961 $ | 4.133 $ | 149.346 $ | 558.793 $ |
+
+Beachte, wie rasant die Kosten des Basic Balls in die Höhe schnellen. Der Kauf von zehn Basic Balls kostet fast das Vierzigfache des ursprünglichen Einstiegspreises für eine Einheit, die keinerlei Flächenschaden oder Debuff-Eigenschaften bietet. Erfahrungsberichte aus der Community zeigen übereinstimmend, dass das Stoppen von Basic-Ball-Käufen bei etwa 4–6 Einheiten der optimale Richtwert ist, bevor man direkt auf Upgrades für Plasma und Scatter spart.
+
+---
+
+## Synergiestrategien: Die besten Ball-Loadouts für lange Runs
+
+Um Level mühelos zu bewältigen, muss deine Sammlung von **Idle Breakout Bällen** als vernetztes System agieren und nicht als unorganisierter Haufen zufälliger Einheiten.
+
+```
++-----------------------------------------------------------+
+|                     OPTIMALE SYNERGIE                     |
+|                                                           |
+|    [Poison Ball] --------> Infiziert Steine (2x Schaden)  |
+|          |                                                |
+|          v                                                |
+|    [Cannonball] ---------> Durchdringt geschwächte Reihen |
+|          +                                                |
+|    [Plasma Ball] --------> Verteilt Splash über Cluster   |
++-----------------------------------------------------------+
+```
+
+### Der Poison- + Cannonball-Fleischwolf
+
+Dies ist die führende Clearing-Kombination für das Mid- bis Late-Game. Cannonballs besitzen eine hohe Grunddurchdringung, können jedoch verlangsamt werden, wenn die Trefferpunkte der Steine astronomische Werte erreichen. 
+
+Unterstützt durch schnelle Poison Balls trägt jeder Stein, auf den der Cannonball trifft, bereits den 2x-Schadens-Debuff. Der Cannonball frisst sich ohne Schwungverlust durch ganze vertikale und horizontale Schichten und räumt den Bildschirm in Sekundenschnelle leer.
+
+### Der Scatter- + Plasma-Raumreiniger
+
+Bei Spielfeldern mit verstreuten Blöcken niedriger bis mittlerer Gesundheit führt die Kombination von Scatter Balls mit dem Plasma-Flächenschaden zu chaotischen Screen-Wipes. 
+
+Wenn die Subbälle des Scatter Balls über das Spielfeld prallen, treffen sie äußere Steine, während Plasma Balls das Innere der Cluster zermürben. Dieses Setup ist besonders effektiv, um gleichmäßige, hochfrequente Gold-Ticks zu generieren, die zur Finanzierung kostspieliger Prestige-Stufen nötig sind.
+
+| Fortschrittsphase | Primärer Ballfokus | Sekundärer Ballfokus | Taktisches Ziel |
+| :--- | :--- | :--- | :--- |
+| **Early Game (Level 1–50)** | Basic (Cap bei 5) | Plasma (Primärer DPS) | Schnelle Goldgenerierung; erste Splash-Effekte freischalten |
+| **Mid Game (Level 51–200)** | Plasma & Scatter | Cannonball | Bildschirmweites Räumen und Zerschlagen dichter Blockreihen |
+| **Late Game (Level 201–1000+)** | Poison | Cannonball & Sniper | Maximierung von Schadensmultiplikatoren und Zielen auf isolierte Boss-Blöcke |
+| **Endgame-Push** | Poison (Maximal) | Scatter & Cannonball | Unendliche Treffer-Skalierungsschleifen und schnelles Prestige-Farming |
+
+---
+
+## Upgrades und Priorität bei der Werte-Investition
+
+Der Kauf von **Idle Breakout Bällen** ist nur die halbe Miete; das Verbessern ihrer Kernparameter – Geschwindigkeit und Stärke – bestimmt dein langfristiges Fortschrittstempo. 
+
+Viele Spieler machen den Fehler, rein auf rohe Stärke zu setzen und dabei die Geschwindigkeit zu vernachlässigen. In einem physikbasierten Idle-Titel bestimmt das Tempo die Trefferfrequenz. Ein Ball, der doppelt so schnell trifft, liefert doppelten Schaden pro Sekunde (DPS), während er gleichzeitig die Goldgenerierung und die Auslöseraten für Fähigkeiten wie Scatter und Splash beschleunigt.
+
+| Upgrade-Parameter | Strategischer Wert | Empfohlenes Investitionsniveau | Notizen |
+| :--- | :--- | :--- | :--- |
+| **Ball-Geschwindigkeit (Speed)** | Essenziell / Tier S | Hohe Priorität (nahe am Limit halten) | Multipliziert direkt die gesamte Trefferfrequenz und Fähigkeitsauslösungen. |
+| **Ball-Stärke (Power)** | Hoch / Tier A | Ausgewogene Priorität | Hält die Grundtrefferwerte im Einklang mit den steigenden Stein-Lebenspunkten. |
+| **Ball-Anzahl (Count)** | Moderat / Tier B | Inkrementelle Priorität | Bis zu dem Punkt kaufen, an dem die Kosten die Werte-Upgrades übersteigen. |
+| **Klick-Stärke (Click Power)** | Niedrig / Situativ | Nur Early Game | Fällt stark ab, sobald der automatisierte Ball-DPS nach oben skaliert. |
+
+Eine verlässliche Faustregel erfahrener Spieler ist das **3:1-Verhältnis**: Investiere für jeweils drei Stufen in Ball-Geschwindigkeit eine Stufe in Ball-Stärke. Sobald eine Einheit ihr Tempolimit erreicht, leite überschüssige Gewinne in den Kauf der nächsten Kugelstufe oder das Freischalten globaler Multiplikatoren um.
+
+---
+
+## Häufig gestellte Fragen zu Idle Breakout Bällen
+
+### Welche Idle Breakout Bälle liefern den höchsten reinen DPS?
+Bezogen auf die reine Zerstörungskraft pro Einzeltreffer führt der Cannonball das Feld dank seiner Durchdringungsfähigkeit an. Betrachtet man jedoch den gesamten System-DPS, ist der Poison Ball das stärkste Element im Spiel, da sein Debuff die Schadensleistung jedes anderen Balls auf dem Spielfeld dauerhaft verdoppelt.
+
+### Warum gelten Poison Balls in den Late-Game-Stufen als unverzichtbar?
+Da die Lebenspunkte der Steine ab Stufe 200 exponentiell ansteigen, werden Einzeltreffer von Standardbällen vernachlässigbar. Der Poison Ball wendet einen dauerhaften 2x-Schadensmultiplikator auf betroffene Blöcke an. Indem er die Anzahl der benötigten Treffer zum Zerstören eines Steins halbiert, verdoppelt der Poison Ball effektiv die Räum-Effizienz deines gesamten Setups.
+
+### Wie funktioniert die Scatter-Ball-Mechanik auf kleineren Auflösungen?
+Der Scatter Ball erzeugt sekundäre Subbälle bei der Kollision mit den Außenbegrenzungen des Spielfelds. Unabhängig von deiner Bildschirmgröße berechnet die Game-Engine die Wandkollisionsboxen konsistent. Bei schmaleren Bildschirmausschnitten treffen Scatter Balls die Wände tatsächlich etwas häufiger, was zu schnellen Schüben bei der Subball-Generierung führt.
+
+### Lohnt es sich, zu Beginn Dutzende von Basic Balls zu kaufen?
+Nein. Da Basic Balls eine steile Kostensteigerung von +50 % pro Kauf aufweisen, eskaliert ihr Preis rasant, während sie keinerlei Zusatznutzen, Splash- oder Durchdringungseffekte bieten. Die Erfahrung der Spieler zeigt, dass der Kauf von mehr als fünf oder sechs Basic Balls wertvolles Gold verschwendet, das lieber für Plasma- und Scatter-Einheiten gespart werden sollte.

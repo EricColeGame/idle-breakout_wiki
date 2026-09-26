@@ -1,0 +1,165 @@
+export const metadata = {
+  title: "Idle Breakout Balls Guide: Tier List, Stats, and Best Upgrades",
+  description: "Master every sphere in Idle Breakout. Explore stats, cost scaling, synergies, and the best upgrade path for idle breakout balls to clear levels fast.",
+  category: "mechanics",
+  date: "2026-09-24",
+}
+
+Mastering your arsenal of **idle breakout balls** is the single most important factor in pushing past plateaus and clearing thousands of levels. In this deceptively simple brick-breaker incremental title, bricks quickly scale into millions and billions of hit points. Knowing how each ball behaves, how costs compound, and how to combine distinct **idle breakout balls** dictates how fast you earn cash, trigger prestiges, and dominate boss stages.
+
+Whether you are just purchasing your first sphere or optimizing a multi-billion-dollar late-game setup, this guide covers every ball type, hidden mechanic, cost formulas, and synergy loadout.
+
+---
+
+## Core Physics and Mechanics of Idle Breakout Balls
+
+At its foundation, the movement in Idle Breakout relies on classic 2D reflection physics. When new balls spawn into the chamber, the game launches them at randomized vectors that purposely avoid true vertical (90°) or true horizontal (0°/180°) paths. This design ensures spheres never get locked into infinite parallel bounce loops between two flat surfaces.
+
+For almost every unit on the board, the game follows the standard law of reflection: the angle of incidence equals the angle of reflection (`i = r`) relative to the surface normal. When striking bricks, side walls, or elite boss barriers, balls rebound cleanly away.
+
+```
+       Incoming Ball (Angle i)        Reflected Ball (Angle r)
+                 \                               /
+                  \                             /
+                   \                           /
+    ------------------------------------------------------- (Surface)
+```
+
+The sole exception to this universal rule is the **Sniper Ball**. Instead of executing a true geometric bounce off outer boundary walls, the Sniper Ball dynamically readjusts its vector to aim directly toward the nearest surviving brick. This targeted homing feature makes it an invaluable precision tool against stubborn lone bricks hiding in corners.
+
+| Physics Attribute | Standard Ball Behavior | Sniper Ball Behavior |
+| :--- | :--- | :--- |
+| **Wall Collisions** | Reflects angle of incidence (`i = r`) | Re-targets directly toward closest active brick |
+| **Brick Collisions** | Standard bounce-back rebound | Standard bounce-back rebound |
+| **Spawn Trajectory** | Random diagonal trajectory | Random diagonal trajectory |
+| **Speed Retention** | Constant velocity (upgradable) | Constant velocity (upgradable) |
+| **Penetration** | Stops upon contact (except Cannonball) | Stops upon contact |
+
+---
+
+## Complete Breakdown of Every Ball in Idle Breakout
+
+Each unit in your roster fulfills a distinct operational role. Some excel at delivering raw single-target burst damage, while others specialize in area-of-effect (AoE) splash or screen-wide crowd control. Understanding these individual specializations helps you decide where to direct your funds.
+
+### The Standard Arsenal
+
+The table below breaks down the base purchase costs, price inflation rates, and innate abilities of all operational balls in the game:
+
+| Ball Type | Base Cost | Cost Increase Per Unit | Innate Ability / Behavior |
+| :--- | :--- | :--- | :--- |
+| **Basic Ball** | $25 | +50% | Bounces off boundaries and bricks, dealing single-target impact damage. |
+| **Plasma Ball** | $200 | +40% | Triggers 25% splash damage to all bricks surrounding the primary target. |
+| **Scatter Ball** | $10,000 | +35% | Spawns mini single-hit sub-balls (50% power) whenever it hits a boundary wall. |
+| **Cannonball** | $75,000 | +30% | Punctures clean through bricks without deflecting, clearing dense columns. |
+| **Poison Ball** | $75,000 | +25% | Infects struck bricks with a persistent debuff that doubles all incoming damage. |
+| **Sniper Ball** | Mid-Tier | Progressive | Re-angles off arena walls to lock onto the closest remaining brick. |
+
+### Ball Roles and Strengths
+
+*   **Basic Ball:** The workhorse of the first ten levels. While its utility drops off drastically later, its low base price lets you build early income momentum.
+*   **Plasma Ball:** The quintessential mid-game clearer. By delivering 25% splash damage across neighboring tiles, Plasma Balls bypass the agonizing process of chipping away at high-health clusters individually.
+*   **Scatter Ball:** A projectile multiplication powerhouse. Every time a Scatter Ball ricochets off the perimeter walls, it disperses secondary fragments. While these fragments expire after one hit, high ball-speed upgrades turn the board into an avalanche of hits.
+*   **Cannonball:** Built specifically to carve lanes through high-density brick formations. Unlike normal spheres that rebound after one contact, Cannonballs smash through consecutive targets in a straight line.
+*   **Poison Ball:** The premiere force multiplier. It does not focus on raw initial impact; instead, it coats bricks in toxic residue. Struck bricks suffer 2x damage from all subsequent impacts, effectively halving the time required to clear thick formations.
+
+### Historical Trivia and Visual Variations
+
+Early builds of the game included a prototype known as the **Money Ball**. This unit possessed slightly higher base stats than the Basic Ball and generated bonus revenue per hit, but developers eventually removed and replaced it with the Plasma Ball to promote active gameplay synergies over pure passive gold generation.
+
+Additionally, players jumping into web versions—such as the popular web build hosted on the [Coolmath Games platform](https://www.coolmathgames.com)—might notice a subtle visual difference: the Cannonball sprite in that release lacks its traditional skull icon, featuring a clean, solid metallic surface instead.
+
+---
+
+## Ball Scaling and Economic Cost Growth
+
+A common pitfall for beginner players is over-purchasing early units without accounting for compounding price inflation. Every time you purchase another sphere of a specific type, its subsequent price increases by a set percentage. 
+
+Because the inflation rate varies widely—from 50% on Basic Balls down to 25% on Poison Balls—lower-tier units quickly become prohibitively expensive relative to their actual damage output.
+
+```text
+\text{Next Cost} = \text{Base Cost} \times (1 + \text{Cost Increase Rate})^{\text{Count}}
+```
+
+| Purchase Count | Basic Ball (+50%) | Plasma Ball (+40%) | Scatter Ball (+35%) | Poison Ball (+25%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Base)** | $25 | $200 | $10,000 | $75,000 |
+| **2** | $37 | $280 | $13,500 | $93,750 |
+| **3** | $56 | $392 | $18,225 | $117,187 |
+| **4** | $84 | $548 | $24,603 | $146,484 |
+| **5** | $126 | $768 | $33,215 | $183,105 |
+| **6** | $190 | $1,076 | $44,840 | $228,881 |
+| **8** | $427 | $2,109 | $81,833 | $357,627 |
+| **10** | $961 | $4,133 | $149,346 | $558,793 |
+
+Notice how quickly the Basic Ball's cost surges. Buying ten Basic Balls costs nearly forty times the original entry fee for a unit that provides no area-of-effect or debuff properties. Community reports consistently highlight that stopping Basic Ball purchases around 4–6 units is the optimal benchmark before saving directly for Plasma and Scatter upgrades.
+
+---
+
+## Synergy Strategies: The Best Ball Loadouts for Deep Runs
+
+To clear levels effortlessly, your collection of **idle breakout balls** must operate as an interconnected system rather than a disorganized cluster of random units.
+
+```
++-----------------------------------------------------------+
+|                     OPTIMAL SYNERGY                       |
+|                                                           |
+|    [Poison Ball] --------> Infects Bricks (2x Damage)     |
+|          |                                                |
+|          v                                                |
+|    [Cannonball] ---------> Pierces Through Weakened Rows  |
+|          +                                                |
+|    [Plasma Ball] --------> Spreads Splash Across Cluster  |
++-----------------------------------------------------------+
+```
+
+### The Poison + Cannonball Meat-Grinder
+
+This is the premier mid-to-late-game clearing combo. Cannonballs possess high base penetration but can get slowed down when brick HP pools reach astronomical values. 
+
+When supported by high-speed Poison Balls, every brick the Cannonball encounters already carries the 2x damage debuff. The Cannonball chews through entire vertical and horizontal layers without losing momentum, clearing screens in seconds.
+
+### The Scatter + Plasma Room Cleaner
+
+For boards featuring scattered, low-to-mid health blocks, pairing Scatter Balls with Plasma splash damage produces chaotic screen wipes. 
+
+When Scatter sub-balls ricochet across the playfield, they strike outer bricks, while Plasma Balls hammer the cluster interiors. This setup is particularly effective for generating steady, high-frequency gold ticks needed to fund costly prestige levels.
+
+| Progression Stage | Primary Ball Focus | Secondary Ball Focus | Tactical Objective |
+| :--- | :--- | :--- | :--- |
+| **Early Game (Levels 1–50)** | Basic (Cap at 5) | Plasma (Primary DPS) | Rapid gold generation; unlock first splash effects |
+| **Mid Game (Levels 51–200)** | Plasma & Scatter | Cannonball | Screen-wide clearing and shattering dense block lines |
+| **Late Game (Levels 201–1000+)** | Poison | Cannonball & Sniper | Maximizing damage multipliers and targeting isolated boss blocks |
+| **Endgame Pushing** | Poison (Maxed) | Scatter & Cannonball | Infinite hit-scaling loops and rapid prestige farming |
+
+---
+
+## Upgrades and Stat Investment Priority
+
+Purchasing **idle breakout balls** is only half the battle; upgrading their core parameters—Speed and Power—determines your long-term progression speed. 
+
+Many players make the mistake of over-indexing purely on raw Power while ignoring Speed. In an idle physics title, velocity governs your hit frequency. A ball hitting twice as fast delivers double the damage per second (DPS) while also accelerating gold generation and trigger rates for abilities like Scatter and Splash.
+
+| Upgrade Parameter | Strategic Value | Recommended Investment Level | Notes |
+| :--- | :--- | :--- | :--- |
+| **Ball Speed** | Essential / Tier S | High Priority (Keep near cap) | Directly multiplies total hit frequency and trigger procs. |
+| **Ball Power** | High / Tier A | Balanced Priority | Keeps base hit values scaling alongside brick health bars. |
+| **Ball Count** | Moderate / Tier B | Incremental Priority | Buy up to the point where cost exceeds stat upgrades. |
+| **Click Power** | Low / Situational | Early Game Only | Falls off sharply once automated ball DPS scales upward. |
+
+A reliable rule of thumb used by veteran players is the **3:1 Ratio**: for every three levels you pump into Ball Speed, invest one into Ball Power. Once a unit hits its speed threshold, reroute surplus profits into purchasing the next tier of spheres or unlocking global multipliers.
+
+---
+
+## Frequently Asked Questions About Idle Breakout Balls
+
+### Which idle breakout balls provide the highest raw DPS?
+In terms of raw single-hit destructive power, the Cannonball leads the pack due to its piercing capabilities. However, when evaluating overall system DPS, the Poison Ball is the strongest asset in the game because its debuff permanently doubles the damage output of every other ball on the board.
+
+### Why are Poison Balls considered essential in late-game stages?
+As brick health scales exponentially past stage 200, individual hits from standard balls become negligible. The Poison Ball applies a persistent 2x damage multiplier to affected blocks. By halving the hits needed to destroy a brick, Poison Balls effectively double the clearing efficiency of your entire setup.
+
+### How does the Scatter Ball mechanic work on smaller resolutions?
+The Scatter Ball spawns secondary sub-balls upon colliding with the play area's perimeter boundaries. Regardless of your screen size, the game engine calculates wall collision boxes consistently. On narrower viewports, Scatter Balls actually strike walls slightly more often, leading to rapid bursts of sub-ball generation.
+
+### Is it worth buying dozens of Basic Balls early on?
+No. Because Basic Balls feature a steep +50% cost increase per purchase, their price escalates rapidly while offering zero utility, splash, or piercing effects. Player experience shows that buying more than five or six Basic Balls wastes valuable gold that should be saved for Plasma and Scatter units.
